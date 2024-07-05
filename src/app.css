@@ -1,41 +1,69 @@
 /* Componente Home */
 
-.contenedor-home{    
-    margin-top: 150px;
-    margin-left: 150px;
+.contenedor-home{   
+    margin-top: 100px  
 }
 
-
-@media (max-width: 1550px){
+@media (max-width: 1600px){
     .contenedor-home{
-        
-
-        
+        margin-left: 30px;
     }
 }
 
-@media (max-width: 1470px){
+@media (max-width: 1380px){
     .contenedor-home{
-        
+        margin-top: 70px;
+        margin-left: 80px;
     }
 }
 
-@media (max-width: 1520px){
-    .contenedor-home{
-        
+@media (max-width: 1380px){
+    .footer{
+        margin-top: 50px;
     }
 }
 
-@media (max-width: 710px){
+
+@media (max-width: 717px){
     .contenedor-home{
         
+        width: 50%; /* Ajusta el ancho según tus necesidades */
+        margin: 0 auto;
+
     }
+
+}
+
+@media (max-width: 717px){
+    .contenedor-encabezado{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
 }
 
 .contenedor-encabezado{
    display: flex;
-  
+   justify-content: center;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contenedor-redes {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .contenedor-curriculum {
+    margin-top: 20px;
+  }
 
 .contenedor-titulos #titulo{
     color: #E73C37;
@@ -43,31 +71,72 @@
     font-size:100px;
 }
 
-@media (max-width: 1470px){
+
+
+@media (max-width: 1600px){
+    .contenedor-titulos #titulo{
+        font-size: 95px;
+    }
+}
+
+@media (max-width: 1380px){
     .contenedor-titulos #titulo{
         font-size: 90px;
     }
 }
+
+@media (max-width: 787px){
+    .contenedor-titulos #titulo{
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 717px){
+    .contenedor-titulos #titulo{
+        font-size: 80px;
+    }
+}
+
+
+
 
 .contenedor-titulos #subtitulo{
     color: #ffffff;
     font-size: 60px;
 }
 
-@media (max-width: 1470px){
+@media (max-width: 1600px){
+    .contenedor-titulos #subtitulo{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1380px){
     .contenedor-titulos #subtitulo{
         font-size: 50px;
     }
 }
 
-@media (max-width: 1470px){
+@media (max-width: 787px){
+    .contenedor-titulos #subtitulo{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 717px){
+    .contenedor-titulos #subtitulo{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1600px){
     .contenedor-titulos #saludo{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
 #saludo{
-    color: rgb(184, 184, 184);
+    color: rgb(133, 133, 133);
     display: block;
     font-family: monospace;
     white-space: nowrap;
@@ -101,37 +170,24 @@
     object-fit: cover; */
 }
 
-@media (max-width: 1470px){
+@media (max-width: 1600px){
     #perfil-img{
-        width:350px;
+        width: 380px;
     }
 }
 
-@media (max-width:px){
+@media (max-width: 1380px){
     #perfil-img{
         width: 350px;
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 787px){
     #perfil-img{
-       
+        width: 300px;
+    
     }
 }
-
-@media (max-width: 710px){
-    #perfil-img{
-        
-       
-    }
-}
-
-@media (max-width: 1518px){
-    .footer{
-            margin-top: 30px;  
-    }
-}
-
 
 #linkedin{
     height: 50px;
@@ -153,7 +209,7 @@
 }
 
 .contenedor-curriculum{
-    display: inline-block;
+    
     background: linear-gradient(to right, #E73C37, #852cce);
     border-radius: 30px;
     margin-top: 15px;
@@ -165,10 +221,17 @@
 #curriculum{
     
     margin-left: 5px;
-    font-size: bold;
-    /* text-transform: uppercase; */
+    font-weight: bold;
+    text-transform: uppercase;
     letter-spacing: 0.03em;
     color: white;
+}
+
+@media (max-width: 520px){
+    .contenedor-curriculum{
+        min-width: 205px;
+        min-height: 30px;
+    }
 }
 
 #flecha{
@@ -193,6 +256,15 @@
     background-color: rgba(255, 255, 255, 0.062);
 }
 
+.boton-nav{
+    border: 4px inset #8685858a; 
+}
+
+.boton-nav span{
+     /* aqui hay que probar */
+}
+
+
 #navbar-collapse a{
     display: flex;
     justify-content: end;
@@ -206,7 +278,8 @@
 
 #home-nav-img{
     height: 40px;
-    margin-left: 30px;
+    margin-left: 50px;
+    
 }
 #links{
     margin-right: 30px;

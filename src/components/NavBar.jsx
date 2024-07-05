@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import home from "../assets/home.png"
+import home from "../assets/home2.png"
 
 
 export const NavBar = () => {
