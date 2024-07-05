@@ -1,18 +1,68 @@
+/* Componente Navbar */
+
+.contenedor-nav{
+    background-color: rgba(255, 255, 255, 0.062); 
+    box-shadow: 1px 3px rgba(255, 255, 255, 0.13);
+}
+
+.boton-nav{
+    border: 4px inset #86858554; 
+}
+
+.boton-nav span{
+    filter: sepia() saturate(10000%) hue-rotate(-90deg) ;
+}
+
+
+#navbar-collapse a{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 1000px){
+    .boton-nav{
+        margin-right: 20px; 
+    }
+}
+
+#home-nav-img{
+    height: 40px;
+    margin-left: 50px;
+    
+}
+#links{
+    margin-right: 30px;
+    
+}
+#links a{
+    font-size:20px; 
+    font-weight: 400;
+    color: white;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+#links a:hover {
+    color: #E73C37;
+    text-shadow: 1px 3px 6px rgb(0, 0, 0);
+}
+  
+
 /* Componente Home */
 
-.contenedor-home{   
-    margin-top: 100px  
+.contenedor-home{
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1600px){
     .contenedor-home{
         margin-left: 30px;
+        
     }
 }
 
 @media (max-width: 1380px){
     .contenedor-home{
-        margin-top: 70px;
+        
         margin-left: 80px;
     }
 }
@@ -27,7 +77,7 @@
 @media (max-width: 717px){
     .contenedor-home{
         
-        width: 50%; /* Ajusta el ancho según tus necesidades */
+        width: 50%;
         margin: 0 auto;
 
     }
@@ -45,8 +95,9 @@
 }
 
 .contenedor-encabezado{
-   display: flex;
-   justify-content: center;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
@@ -170,19 +221,15 @@
     object-fit: cover; */
 }
 
-@media (max-width: 1600px){
-    #perfil-img{
-        width: 380px;
+
+@media (max-width: 977px){
+    .contenedor-encabezado{
+        margin-top: 70px;
+    
     }
 }
 
-@media (max-width: 1380px){
-    #perfil-img{
-        width: 350px;
-    }
-}
-
-@media (max-width: 787px){
+@media (max-width: 877px){
     #perfil-img{
         width: 300px;
     
@@ -209,10 +256,9 @@
 }
 
 .contenedor-curriculum{
-    
+    margin-bottom: 100px;
     background: linear-gradient(to right, #E73C37, #852cce);
     border-radius: 30px;
-    margin-top: 15px;
     padding: 10px;
     text-decoration: none;
     transition: padding-right 0.3s ease; 
@@ -220,7 +266,7 @@
 
 #curriculum{
     
-    margin-left: 5px;
+    margin: 5px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -235,9 +281,9 @@
 }
 
 #flecha{
-    margin-left: 10px;
-    margin-top: -5px;
-    height: 20px;
+    margin-left: 5px;
+    margin-top: -3px;
+    width: 15px;
     transition: transform 0.3s ease;
 }
 
@@ -249,79 +295,37 @@
     padding-right: 20px;
 }
 
-
-/* Componente Navbar */
-
-.contenedor-nav{
-    background-color: rgba(255, 255, 255, 0.062);
-}
-
-.boton-nav{
-    border: 4px inset #8685858a; 
-}
-
-.boton-nav span{
-     /* aqui hay que probar */
-}
-
-
-#navbar-collapse a{
-    display: flex;
-    justify-content: end;
-}
-
-@media (max-width: 1000px){
-    .boton-nav{
-        margin-right: 20px; 
-    }
-}
-
-#home-nav-img{
-    height: 40px;
-    margin-left: 50px;
-    
-}
-#links{
-    margin-right: 30px;
-    
-}
-#links a{
-    font-size:20px; 
-    font-weight: 400;
-    color: white;
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-#links a:hover {
-    color: #E73C37;
-    text-shadow: 1px 3px 6px rgb(0, 0, 0);
-}
-  
-
 /* Componente Sobre Mi */
 
 #contenedor-sm{ 
-
-    margin: 20px;
-    width: 50%;
-    margin-left: 20%;
-    margin-top: 70px;   
-    overflow: hidden;
-
-   
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #312C38;
 }
 
 #sm-titulo{
-    
-    background-color: rgba(0, 179, 255, 0.264);
     color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size:40px;
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
+#sm-titulo::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #007BFF; 
+  }
+
 #descripcion{ 
+    width: 400px;
     text-align: center;
     padding: 10px;
     font-size:20px;

@@ -1,13 +1,12 @@
-body, html{
+body,html{
    background-image: url('./assets/bg2.jpg');
-   margin: 0;
-   padding: 0;
-   min-height: 100vh;
-   background-color: black;
    background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-}
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+} 
 
 
 
