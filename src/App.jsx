@@ -2,6 +2,8 @@ import { NavBar } from "./components/NavBar"
 import './app.css'
 import { Home } from "./components/Home"
 import { SobreMi } from "./components/SobreMi"
+import { HabilidadesTecnicas } from "./components/HabilidadesTecnicas"
+import { Form } from "./components/Form"
 
 
 export const App = () => {
@@ -10,6 +12,8 @@ export const App = () => {
     <NavBar/>
     <Home/>
     <SobreMi/>
+    <HabilidadesTecnicas/>
+    <Form/>
     </>
   )
 }

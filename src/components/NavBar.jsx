@@ -19,7 +19,7 @@ export const NavBar = () => {
 
               <Nav id="links" className="ms-auto" >
 
-                <Nav.Link href="#Sobre Mi">Sobre Mi</Nav.Link>
+                <Nav.Link href="#sm-titulo">Sobre Mi</Nav.Link>
                 <Nav.Link href="#Proyectos">Proyectos</Nav.Link>
                 <Nav.Link href="#Contacto">Contacto</Nav.Link>
 
