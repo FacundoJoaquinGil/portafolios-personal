@@ -19,9 +19,9 @@ export const NavBar = () => {
 
               <Nav id="links" className="ms-auto" >
 
-                <Nav.Link href="#sm-titulo">Sobre Mi</Nav.Link>
-                <Nav.Link href="#Proyectos">Proyectos</Nav.Link>
-                <Nav.Link href="#Contacto">Contacto</Nav.Link>
+                <Nav.Link href="#navbar-sm">Sobre Mi</Nav.Link>
+                <Nav.Link href="#navbar-card">Proyectos</Nav.Link>
+                <Nav.Link href="#navbar-form">Contacto</Nav.Link>
 
               </Nav>
 

@@ -28,7 +28,7 @@ export const Home = () => {
 
           <div className="contenedor-redes">
 
-            <a href="https://www.linkedin.com/in/facundo-joaqu%C3%ADn-gil-21b3a3303/"target="_blank">
+            <a href="https://www.linkedin.com/in/facundo-joaqu%C3%ADn-gil-21b3a3303/" target="_blank">
               <img id="linkedin" src={linkedin}></img>
             </a>
 

@@ -2,10 +2,10 @@
 export const SobreMi = () => {
   return (
     <>
-
-     <div className="contenedor-sm" data-aos="fade-up">
+     <div id='navbar-sm'></div>
+     <div  className="contenedor-sm" data-aos="fade-up">
       
-        <h3 id="sm-titulo">Sobre Mi:</h3>
+        <h1 id="sm-titulo">Sobre Mi:</h1>
 
         <div className='contenedor-desc-lista'>
 
@@ -21,7 +21,7 @@ export const SobreMi = () => {
               
             </ul>
 
-            <ul id ='lista'>
+            <ul id ='lista' >
               <li>Email: facundojoagl@gmail.com</li>
               <li>Titulo Academico: Tecnico Universitario En Programacion</li>
               <li>Grado: Trainee</li>

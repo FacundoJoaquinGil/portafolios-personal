@@ -9,24 +9,115 @@ import git from "../assets/git-logo.png";
 
 export const HabilidadesTecnicas = () => {
   return (
-    <>
-      <div className="contenedor-skills" >
-        <h3 id="ht-titulo">Habilidades Tecnicas</h3>
+    <>  
+    <div className="contenedor-ht">
 
-        <div id="contenedor-box" data-aos="fade-right">
+    
+    <h1 id="titulo-ht">Habilidades Tecnicas</h1>
 
-          <a  href=""><img id="box" src={html} alt="" /></a>
-          <a  href=""><img id="box" src={css} alt="" /></a>
-          <a  href=""><img id="box" src={js} alt="" /></a>
-          <a  href=""><img id="box" src={react} alt="" /></a>
-          <a  href=""><img id="box" src={bootstrap} alt="" /></a>
-          <a  href=""><img id="box" src={node} alt="" /></a>
-          <a  href=""><img id="box" src={sql} alt="" /></a>
-          <a  href=""><img id="box" src={git} alt="" /></a>
+          <div className="container d-flex justify-content-center" data-aos="fade-right">
+            
+            <div className="row col-5" >
 
+              <div className="col-md-3">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={html} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={css} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={js} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={react} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={bootstrap} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={node} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={sql} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div className="col-md-3 ">
+                
+                <div className="card skill-card">
+
+                  <div className="card-img">
+                    <img className="img-fluid" src={git} alt="" />
+                  </div>
+                  
+                </div>
+
+              </div>
+
+          </div>
         </div>
-
-      </div>
+        </div>
     </>
     
   )

@@ -4,6 +4,7 @@ import { Home } from "./components/Home"
 import { SobreMi } from "./components/SobreMi"
 import { HabilidadesTecnicas } from "./components/HabilidadesTecnicas"
 import { Form } from "./components/Form"
+import { Cards } from "./components/Cards"
 
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
     <Home/>
     <SobreMi/>
     <HabilidadesTecnicas/>
+    <Cards/>
     <Form/>
     </>
   )

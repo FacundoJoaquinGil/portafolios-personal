@@ -2,6 +2,7 @@
 export const Form = () => {
   return (
     <>
+        <div id="navbar-form"></div>
         <div className="contenedor-form"  >
         
             <div className="sub-contenedor-form" data-aos="fade-left">
@@ -12,21 +13,21 @@ export const Form = () => {
 
                         <div className="input">
                             <input id="input-texto" type="text" required/>
-                            <label id="titulo">Nombre</label>
+                            <label id="titulo-form">Nombre</label>
                         </div>
 
                         <div className="input">
                             <input id="input-texto" type="text" required/>
-                            <label id="titulo">Email</label>
+                            <label id="titulo-form">Email</label>
                         </div>
 
                         <div className="input">
                             <input id="input-texto" type="text" required/>
-                            <label id="titulo">Mensaje</label>
+                            <label id="titulo-form">Mensaje</label>
                         </div>
 
                         <div className="contenedor-boton">
-                            <button id="boton-enviar">Enviar</button>   
+                            <button  id="boton-enviar" type="submit">Enviar</button>   
                         </div>
 
                     </form>
