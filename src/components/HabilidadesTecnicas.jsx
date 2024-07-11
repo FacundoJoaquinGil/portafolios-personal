@@ -9,17 +9,21 @@ import git from "../assets/git-logo.png";
 
 export const HabilidadesTecnicas = () => {
   return (
-    <>  
-    <div className="contenedor-ht">
+    <> 
 
+    
+
+    <div className="contenedor-ht">
+      
+    <hr id="separador-ht"/>
     
     <h1 id="titulo-ht">Habilidades Tecnicas</h1>
 
           <div className="container d-flex justify-content-center" data-aos="fade-right">
             
-            <div className="row col-5" >
+            <div className="row col-6 d-flex justify-content-center" >
 
-              <div className="col-md-3">
+              <div className="col-6 col-md-auto">
                 
                 <div className="card skill-card">
 
@@ -31,7 +35,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 
@@ -43,7 +47,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 
@@ -55,7 +59,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 
@@ -67,7 +71,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 
@@ -79,7 +83,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 
@@ -91,7 +95,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 
@@ -103,7 +107,7 @@ export const HabilidadesTecnicas = () => {
 
               </div>
 
-              <div className="col-md-3 ">
+              <div className="col-6 col-md-auto ">
                 
                 <div className="card skill-card">
 

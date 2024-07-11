@@ -3,7 +3,10 @@ export const Form = () => {
   return (
     <>
         <div id="navbar-form"></div>
-        <div className="contenedor-form"  >
+        <hr id="separador-formulario"/>
+        <div className="contenedor-form">
+
+            
         
             <div className="sub-contenedor-form" data-aos="fade-left">
 
