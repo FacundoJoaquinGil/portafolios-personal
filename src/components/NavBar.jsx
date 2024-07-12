@@ -5,7 +5,7 @@ import home from "../assets/home2.png"
 export const NavBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="contenedor-nav" data-bs-theme="dark">
+      <Navbar expand="lg" className="contenedor-nav" data-bs-theme="dark"  data-aos="fade-down">
 
             <Navbar.Brand href="/">
 
@@ -21,7 +21,7 @@ export const NavBar = () => {
 
                 <Nav.Link href="#navbar-sm">Sobre Mi</Nav.Link>
                 <Nav.Link href="#navbar-card">Proyectos</Nav.Link>
-                <Nav.Link href="#navbar-form">Contacto</Nav.Link>
+                <Nav.Link href="#navbar-form">Contactos</Nav.Link>
 
               </Nav>
 

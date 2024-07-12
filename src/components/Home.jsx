@@ -1,4 +1,4 @@
-import perfil from "../assets/perfil1.png";
+import perfil from "../assets/perfil2.png";
 import linkedin from "../assets/linkedin-logo.png";
 import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
@@ -26,17 +26,17 @@ export const Home = () => {
 
         <div className="footer">
 
-          <div className="contenedor-redes">
+            <div className="contenedor-redes">
 
-            <a href="https://www.linkedin.com/in/facundo-joaqu%C3%ADn-gil-21b3a3303/" target="_blank">
-              <img id="linkedin" src={linkedin}></img>
-            </a>
+              <a href="https://www.linkedin.com/in/facundo-joaqu%C3%ADn-gil-21b3a3303/" target="_blank">
+                <img id="linkedin" src={linkedin}></img>
+              </a>
 
-            <a href="https://github.com/FacundoJoaquinGil" target="_blank">
-              <img id="git" src={git}></img>
-            </a>
+              <a href="https://github.com/FacundoJoaquinGil" target="_blank">
+                <img id="git" src={git}></img>
+              </a>
 
-          </div>
+            </div>
 
             <a className="contenedor-curriculum" href="https://drive.google.com/file/d/1oKxt5R6lrdq6Tu5GeNszw1njYCMTF_-y/view?usp=sharing" target="_blank">
               <span id="curriculum">Ver Curriculum</span>
