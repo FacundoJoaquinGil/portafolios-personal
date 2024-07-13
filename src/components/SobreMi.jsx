@@ -19,12 +19,10 @@ export const SobreMi = () => {
             <ul id ='lista'>
 
               <li>Edad: 24 Años</li>
-              <li>AQUI FALTA ALGO</li>
+              <li>Fecha De Nacimiento: 12/10/1999</li>              
+              <li>Nacionalidad: Argentina</li>
               <li>Residencia: Tucuman, Argentina</li>
-              <li>EXPERIENCIA???</li>
               <li>Titulo Academico: Tecnico Universitario En Programacion</li>
-              <li>Grado: Trainee</li>
-              
             </ul>
 
           </div>

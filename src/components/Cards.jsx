@@ -12,7 +12,7 @@ export const Cards = () => {
     <>
     <div id="navbar-card"></div>
 
-    <hr id='separador-proyectos'/>
+    <hr id='separador'/>
 
     <h1 id='titulo-proyectos'>Proyectos</h1>
 

@@ -15,7 +15,7 @@ export const HabilidadesTecnicas = () => {
 
     <div className="contenedor-ht">
       
-    <hr id="separador-ht"/>
+    <hr id="separador"/>
     
     <h1 id="titulo-ht">Habilidades Tecnicas</h1>
 
