@@ -10,6 +10,7 @@
 /* Componente Navbar */
 
 .contenedor-nav{
+   
     background-color: rgba(255, 255, 255, 0.062);
     box-shadow: 1px 3px rgba(255, 255, 255, 0.13);
 }
@@ -21,6 +22,7 @@
 #navbar-collapse a{
     display: flex;
     justify-content: end;
+
 }
 
 @media (max-width: 1000px){
@@ -300,14 +302,14 @@
     .contenedor-encabezado {
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .contenedor-titulos {
         text-align: center;
     }
 
-    .contenedor-titulos #titulo {
+    .contenedor-titulos #titulo {   
         font-size: 3em;
     }
 
@@ -316,7 +318,7 @@
     }
 
     .contenedor-titulos #saludo {
-        font-size: 1em;
+        font-size: 1.5em;
         margin-top: 10px;
     }
 
@@ -350,9 +352,8 @@
     }
 
     .contenedor-curriculum {
-        flex: 1;
-        padding: 5px 10px;
-        margin-top: 0;
+        padding: 5px;
+        margin-top: 10px;
     }
 
     .contenedor-curriculum #curriculum {
@@ -375,6 +376,11 @@
     font-weight: bold;
     font-size: 2rem;
 }
+
+.contenedor-sm{
+    background-color: #221f26;
+}
+
 
 #sm-titulo::after {
     display: flex;
@@ -523,21 +529,9 @@ ul#lista li::before{
 .skill-card {
     margin: 10px;
     width: 100px;
-    /* background-color:rgba(17,0,32,.5); */
-
     background-color: #6d58f2;
-
-    /* background: linear-gradient(20deg, rgb(28, 30, 34) 0%, rgba(17,0,32,.5) 100%); */
     box-shadow: 5px 5px #0000003f;
     margin-bottom: 1rem
-}
-
-@media only screen and (max-width: 490px){
-
-    .skill-card{
-     width: 80px;
-    }
-
 }
 
 .skill-card:hover{
@@ -560,7 +554,14 @@ ul#lista li::before{
 
 .skill-card .card-img img {
     padding: 5px;
-    /* margin: 5px auto; */
+}
+
+@media only screen and (max-width: 490px){
+
+    .skill-card{
+     width: 80px;
+    }
+
 }
 
 
@@ -575,11 +576,24 @@ ul#lista li::before{
     padding: 20px;
 }
 
-@media only screen and (max-width: 855px){
+.contenedor-fila-proyectos{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1450px){
 
  .contenedor-proyectos{
     flex-direction: column;
 }
+}
+
+@media only screen and (max-width: 750px){
+
+    .contenedor-fila-proyectos{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -681,34 +695,89 @@ ul#lista li::before{
 }
 
 .contenedor-code{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
 }
 
 .contenedor-code a{
-    display: flex;
-    justify-content: center;
-
-    background: linear-gradient(to right, #E73C37, #852cce);
-    border-radius: 5px;
-    padding: 5px;
     text-decoration: none;
 }
 
-.contenedor-code a:hover {
-    border: 1px solid rgba(255, 255, 255, 0.463);
-    text-shadow: 2px 2px  rgba(0, 0, 0, 0.442);
-    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.253);
-
-}
-
 #code{
-
-    padding: 5px;
+    background: linear-gradient(to right, #E73C37, #852cce);
+    border-radius: 7px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
     color: white;
+    padding: 5px;
+    transition: transform 0.3s ease
 }
+
+#code:hover {
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+#img-code{
+    padding: 3px;
+    margin-left: 10px;
+    border-radius: 7px;
+    background-color: rgb(90, 42, 163);
+    height: 34px;
+    transition: transform 0.3s ease
+}
+
+#img-code:hover {
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+.footer-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contenedor-ver-mas-proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #851b1bc2;
+    background-color: #E73C37;
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.444);
+}
+
+#boton-ver-mas-proyectos{
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+#mas{
+    
+    padding-left: 7px;
+    height: 20px;
+}
+
+.contenedor-ver-mas-proyectos:hover{
+    box-shadow: none;
+    text-shadow: 2px 2px #00000046;
+    transform: scale(1.1);
+}
+.contenedor-ver-mas-proyectos:hover  #mas{
+    filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.505));
+}
+
+
 
 
 /* Contactos */
@@ -917,7 +986,6 @@ ul#lista li::before{
     }
 
 }
-
 
 
 
