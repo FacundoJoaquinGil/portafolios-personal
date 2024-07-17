@@ -3,7 +3,7 @@ body{
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
-   height: 125vh;
+   max-height: 135vh;
    background-color: #221f26;
 
 } 

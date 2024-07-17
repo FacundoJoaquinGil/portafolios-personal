@@ -1,4 +1,6 @@
 import clima from "../assets/clima.jpg";
+import biblioteca from "../assets/biblioteca.jpg";
+import tienda from "../assets/tienda-ropa.jpg";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
@@ -24,7 +26,7 @@ export const Cards = () => {
             <div className="carta">
               <img
                 className="portada-card"
-                src="https://www.comunidadbaratz.com/wp-content/uploads/OpenLibra.png"
+                src=""
                 alt=""
               />
 
@@ -70,9 +72,9 @@ export const Cards = () => {
           </div>
           <div className="contenedor-cards" data-aos="flip-left">
             <div className="carta">
-              <img className="portada-card" src="" alt="" />
+              <img className="portada-card" src={tienda} alt="" />
 
-              <h3 id="titulo-card-proyectos">Proyecto Tienda Ropa</h3>
+              <h3 id="titulo-card-proyectos">Tienda de Ropa</h3>
 
               <p className="descripcion-cart">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -100,11 +102,11 @@ export const Cards = () => {
             </div>
 
             <div className="contenedor-code">
-              <a id="code" href="" target="_blank">
+              <a id="code" href="https://proyecto-tienda-ropa-react.netlify.app/" target="_blank">
                 <span>Ver Proyecto</span>
               </a>
 
-              <a href="" target="_blank">
+              <a href="https://github.com/FacundoJoaquinGil/Proyecto-Tienda-Ropa" target="_blank">
                 <img id="img-code" src={code} alt="" />
               </a>
             </div>
@@ -113,9 +115,9 @@ export const Cards = () => {
         <div className="contenedor-fila-proyectos"> 
         <div className="contenedor-cards" data-aos="flip-left">
           <div className="carta">
-            <img className="portada-card" src="" alt="" />
+            <img className="portada-card" src={biblioteca} alt="" />
 
-            <h3 id="titulo-card-proyectos">Proyecto Libreria</h3>
+            <h3 id="titulo-card-proyectos">Biblioteca Escolar</h3>
 
             <p className="descripcion-cart">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -143,11 +145,11 @@ export const Cards = () => {
           </div>
 
           <div className="contenedor-code">
-            <a id="code" href="" target="_blank">
+            <a id="code" href="https://biblioteca-escolar-js.netlify.app/" target="_blank">
               <span>Ver Proyecto</span>
             </a>
 
-            <a href="" target="_blank">
+            <a href="https://github.com/FacundoJoaquinGil/biblioteca-escolar" target="_blank">
               <img id="img-code" src={code} alt="" />
             </a>
           </div>
@@ -202,7 +204,7 @@ export const Cards = () => {
       </div>
 
       <div className="footer-card">
-        <a className="contenedor-ver-mas-proyectos" href="" target="_blank">
+        <a className="contenedor-ver-mas-proyectos" href="https://github.com/FacundoJoaquinGil?tab=repositories" target="_blank">
           <span id="boton-ver-mas-proyectos">Mira mas proyectos aqui</span>
           <img id="mas" src={mas} />
         </a>
