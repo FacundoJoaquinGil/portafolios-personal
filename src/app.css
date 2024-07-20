@@ -647,6 +647,7 @@ ul#lista li::before{
       }
       .descripcion-cart{
         padding: .5rem 0;
+        margin-bottom: 50px;
         color: #a89ec9;
         height: 180px;
       }

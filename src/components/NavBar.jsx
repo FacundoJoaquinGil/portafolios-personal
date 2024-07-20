@@ -7,7 +7,7 @@ export const NavBar = () => {
   return (
     <>
     
-      <Navbar expand="lg" className="contenedor-nav" data-bs-theme="dark" data-aos="fade-down" >
+      <Navbar expand="lg" className="contenedor-nav" data-bs-theme="dark">
 
             <Navbar.Brand href="/">
 
