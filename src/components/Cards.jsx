@@ -59,7 +59,7 @@ export const Cards = () => {
             </div>
 
             <div className="contenedor-code">
-              <a id="code" href="" target="_blank">
+              <a id="code" href="https://consultorio-dentista.onrender.com/" target="_blank">
                 <span>Ver Proyecto</span>
               </a>
 
