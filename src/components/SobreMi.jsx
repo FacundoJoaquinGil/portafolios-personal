@@ -6,7 +6,6 @@ export const SobreMi = () => {
       <div className="contenedor-sm">
         <div data-aos="fade-up">
           <h1 id="sm-titulo">Sobre Mi:</h1>
-
           <div className="contenedor-desc-lista">
             <p id="descripcion-sm">
               Autodidacta, curioso y responsable. Comprometido con el

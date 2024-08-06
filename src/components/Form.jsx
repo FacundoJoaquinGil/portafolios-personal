@@ -114,7 +114,7 @@ export const Form = () => {
 
                         <div className="desc-contacto">
                             <h4 id="titulo-desc-contacto">Discord</h4>
-                            <p id="parrafo-desc-contacto">fakq</p>
+                            <p id="parrafo-desc-contacto">fac.joaquin</p>
                         </div>
 
                     </div>
