@@ -8,7 +8,6 @@ import sql from "../assets/sql.png";
 import git from "../assets/git-logo.png";
 import mongo from "../assets/mongo.png";
 import docker from "../assets/docker.png";
-import postgre from "../assets/postgre.png";
 import postman from "../assets/postman.png";
 
 export const HabilidadesTecnicas = () => {
@@ -140,18 +139,6 @@ export const HabilidadesTecnicas = () => {
 
                   <div className="card-img">
                     <img className="img-fluid" src={postman} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={postgre} alt="" />
                   </div>
                   
                 </div>
