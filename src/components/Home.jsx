@@ -35,7 +35,7 @@ export const Home = () => {
 
           <a
             className="contenedor-curriculum"
-            href="https://drive.google.com/file/d/1oKxt5R6lrdq6Tu5GeNszw1njYCMTF_-y/view?usp=sharing"
+            href="https://drive.google.com/file/d/1v_Ed9QTICWOH38TYXIprfms3S7bumI4U/view"
             target="_blank"
           >
             <span id="curriculum">Ver Curriculum</span>
