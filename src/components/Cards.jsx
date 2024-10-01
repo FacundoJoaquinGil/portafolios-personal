@@ -11,6 +11,7 @@ import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
 import mas from "../assets/mas.png";
+import hosp from "../assets/hospital.jpg";
 
 export const Cards = () => {
   return (
@@ -25,9 +26,57 @@ export const Cards = () => {
         <div className="contenedor-fila-proyectos">
           <div className="contenedor-cards" data-aos="flip-left">
             <div className="carta">
+              <img className="portada-card" src={hosp} alt="" />
+
+              <h3 id="titulo-card-proyectos">Pagina Web Hospital</h3>
+
+              <p className="descripcion-cart">
+                plataforma web para el Hospital de San Pablo-Tucumán, que
+                permite a los visitantes informarse sobre noticias médicas, ver
+                el personal disponible y sus horarios, así como de los CAPS
+                cercanos, además, cuenta con una sección para que los
+                administradores gestionen al personal y creen usuarios que
+                puedan subir documentación destinada al personal del hospital,
+                entre otras fuciones que explico mas a fondo en mi github.
+              </p>
+
+              <hr />
+
+              <div className="contenedor-lenguajes">
+                <div className="lenguajes-utilizados">
+                  <img src={html} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={css} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={react} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={node} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={sql} alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div className="contenedor-code">
+              <a id="code" href="" target="_blank">
+                <span>Ver Proyecto</span>
+              </a>
+
+              <a href="" target="_blank">
+                <img id="img-code" src={code} alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div className="contenedor-cards" data-aos="flip-left">
+            <div className="carta">
               <img className="portada-card" src={consultorio} alt="" />
 
-              <h3 id="titulo-card-proyectos">Consultorio Web</h3>
+              <h3 id="titulo-card-proyectos">Consultorio Dentista</h3>
 
               <p className="descripcion-cart">
                 Proyecto de un consultorio web para dentistas que contiene un
@@ -47,10 +96,10 @@ export const Cards = () => {
                   <img src={css} alt="" />
                 </div>
                 <div className="lenguajes-utilizados">
-                  <img src={js} alt="" />
+                  <img src={react} alt="" />
                 </div>
                 <div className="lenguajes-utilizados">
-                  <img src={react} alt="" />
+                  <img src={node} alt="" />
                 </div>
                 <div className="lenguajes-utilizados">
                   <img src={sql} alt="" />
@@ -59,7 +108,11 @@ export const Cards = () => {
             </div>
 
             <div className="contenedor-code">
-              <a id="code" href="https://consultorio-dentista.onrender.com/" target="_blank">
+              <a
+                id="code"
+                href="https://consultorio-dentista.onrender.com/"
+                target="_blank"
+              >
                 <span>Ver Proyecto</span>
               </a>
 
@@ -168,53 +221,6 @@ export const Cards = () => {
 
               <a
                 href="https://github.com/FacundoJoaquinGil/biblioteca-escolar"
-                target="_blank"
-              >
-                <img id="img-code" src={code} alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div className="contenedor-cards" data-aos="flip-left">
-            <div className="carta">
-              <img className="portada-card" src={clima} alt="" />
-
-              <h3 id="titulo-card-proyectos">Aplicacion de Clima</h3>
-
-              <p className="descripcion-cart">
-                Proyecto de página web para saber el tiempo climático, el cual
-                me permite conocer la temperatura, humedad y una breve
-                descripción de cómo está el clima. Consumo una API gratuita que
-                además me permite traducirla a distintos idiomas y buscar
-                ciudades de todo el mundo y su respectivo país.
-              </p>
-
-              <hr />
-
-              <div className="contenedor-lenguajes">
-                <div className="lenguajes-utilizados">
-                  <img src={html} alt="" />
-                </div>
-                <div className="lenguajes-utilizados">
-                  <img src={css} alt="" />
-                </div>
-                <div className="lenguajes-utilizados">
-                  <img src={js} alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div className="contenedor-code">
-              <a
-                id="code"
-                href="https://aplicacion-clima-api-js.netlify.app/"
-                target="_blank"
-              >
-                <span>Ver Proyecto</span>
-              </a>
-
-              <a
-                href="https://github.com/FacundoJoaquinGil/aplicacion-clima"
                 target="_blank"
               >
                 <img id="img-code" src={code} alt="" />

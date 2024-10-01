@@ -20,6 +20,8 @@ export const SobreMi = () => {
                 <li>Nacionalidad: Argentina</li>
                 <li>Residencia: Tucuman, Argentina</li>
                 <li>Titulo Academico: Tecnico Universitario En Programacion</li>
+                <li>Lugar: Universidad Tecnologica Nacional - FRT</li>
+                <li>Año: 2024</li>
               </ul>
             </div>
           </div>
