@@ -23,7 +23,7 @@ export const Cards = () => {
       <h1 id="titulo-proyectos">Proyectos</h1>
 
       <div className="contenedor-proyectos">
-        <div className="contenedor-fila-proyectos">
+        <div className="contenedor-fila-proyectos1">
           <div className="contenedor-cards" data-aos="flip-left">
             <div className="carta">
               <img className="portada-card" src={hosp} alt="" />
@@ -63,10 +63,10 @@ export const Cards = () => {
 
             <div className="contenedor-code">
               <a id="code" href="" target="_blank">
-                <span>Ver Proyecto</span>
+                <span>Ver Pagina</span>
               </a>
 
-              <a href="" target="_blank">
+              <a href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP" target="_blank">
                 <img id="img-code" src={code} alt="" />
               </a>
             </div>
@@ -113,7 +113,7 @@ export const Cards = () => {
                 href="https://consultorio-dentista.onrender.com/"
                 target="_blank"
               >
-                <span>Ver Proyecto</span>
+                <span>Ver Pagina</span>
               </a>
 
               <a
@@ -124,7 +124,11 @@ export const Cards = () => {
               </a>
             </div>
           </div>
-          <div className="contenedor-cards" data-aos="flip-left">
+          
+        </div>
+        <div className="contenedor-fila-proyectos2">
+
+        <div className="contenedor-cards" data-aos="flip-left">
             <div className="carta">
               <img className="portada-card" src={tienda} alt="" />
 
@@ -165,7 +169,7 @@ export const Cards = () => {
                 href="https://proyecto-tienda-ropa-react.netlify.app/"
                 target="_blank"
               >
-                <span>Ver Proyecto</span>
+                <span>Ver Pagina</span>
               </a>
 
               <a
@@ -176,8 +180,7 @@ export const Cards = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className="contenedor-fila-proyectos">
+
           <div className="contenedor-cards" data-aos="flip-left">
             <div className="carta">
               <img className="portada-card" src={biblioteca} alt="" />
@@ -216,7 +219,7 @@ export const Cards = () => {
                 href="https://biblioteca-escolar-js.netlify.app/"
                 target="_blank"
               >
-                <span>Ver Proyecto</span>
+                <span>Ver Pragina</span>
               </a>
 
               <a

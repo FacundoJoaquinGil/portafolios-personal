@@ -8,8 +8,37 @@ import Swal from "sweetalert2";
 export const Form = () => {
   const form = useRef();
 
+  const mensajeEnviado = (e) => {
+    const userName = form.current.user_name.value;
+    const userEmail = form.current.user_email.value;
+    const message = form.current.message.value;
+
+    if (!userName || !userEmail || !message) {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Por favor complete todos los campos antes de enviar",
+      });
+      return false;
+    }
+
+    Swal.fire({
+      title: "Enviando Mensaje...",
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    return true;
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!mensajeEnviado()) {
+      return;
+    }
 
     emailjs
       .sendForm("service_kv3h4b8", "template_dr8henf", form.current, {
@@ -34,43 +63,6 @@ export const Form = () => {
           console.log("FAILED...");
         }
       );
-  };
-
-  const mensajeEnviado = (e) => {
-    const userName = form.current.user_name.value;
-    const userEmail = form.current.user_email.value;
-    const message = form.current.message.value;
-
-    if (!userName || !userEmail || !message) {
-        Swal.fire({
-            icon: "error",
-            title: "Error",
-            text: "Por favor complete todos los campos antes de enviar",
-          });
-      e.preventDefault();
-      return;
-    }
-    let timerInterval;
-    Swal.fire({
-      title: "Enviando Mensaje...",
-      timer: 2000,
-      timerProgressBar: true,
-      didOpen: () => {
-        Swal.showLoading();
-        const timer = Swal.getPopup().querySelector("b");
-        timerInterval = setInterval(() => {
-          timer.textContent = `${Swal.getTimerLeft()}`;
-        }, 100);
-      },
-      willClose: () => {
-        clearInterval(timerInterval);
-      },
-    }).then((result) => {
-      /* Read more about handling dismissals below */
-      if (result.dismiss === Swal.DismissReason.timer) {
-        console.log("I was closed by the timer");
-      }
-    });
   };
 
   return (
@@ -102,7 +94,7 @@ export const Form = () => {
             </div>
 
             <div className="contenedor-boton">
-              <button id="boton-enviar" type="submit" value="Send" onClick={mensajeEnviado}>
+              <button id="boton-enviar" type="submit" value="Send">
                 Enviar
               </button>
             </div>
