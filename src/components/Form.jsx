@@ -8,17 +8,14 @@ import Swal from "sweetalert2";
 export const Form = () => {
   const form = useRef();
 
-  const mensajeEnviado = (e) => {
+  const mensajeEnviado = () => {
+
+
     const userName = form.current.user_name.value;
     const userEmail = form.current.user_email.value;
     const message = form.current.message.value;
 
     if (!userName || !userEmail || !message) {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "Por favor complete todos los campos antes de enviar",
-      });
       return false;
     }
 
