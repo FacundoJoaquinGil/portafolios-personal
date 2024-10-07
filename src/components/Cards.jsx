@@ -1,4 +1,3 @@
-import clima from "../assets/clima.jpg";
 import consultorio from "../assets/consultorio.jpg";
 import biblioteca from "../assets/biblioteca.jpg";
 import tienda from "../assets/tienda-ropa.jpg";
@@ -11,6 +10,7 @@ import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
 import mas from "../assets/mas.png";
+import git from "../assets/git-logo-blanco.png";
 import hosp from "../assets/hospital.jpg";
 
 export const Cards = () => {
@@ -31,13 +31,13 @@ export const Cards = () => {
               <h3 id="titulo-card-proyectos">Pagina Web Hospital</h3>
 
               <p className="descripcion-cart">
-                plataforma web para el Hospital de San Pablo-Tucumán, que
-                permite a los visitantes informarse sobre noticias médicas, ver
-                el personal disponible y sus horarios, así como de los CAPS
-                cercanos, además, cuenta con una sección para que los
-                administradores gestionen al personal y creen usuarios que
-                puedan subir documentación destinada al personal del hospital,
-                entre otras fuciones que explico mas a fondo en mi github.
+                Plataforma web para el Hospital de San Pablo-Tucumán que permite
+                a los visitantes informarse sobre noticias médicas, consultar el
+                personal disponible y sus horarios. Cuenta con un panel de
+                administración donde los administradores pueden gestionar y
+                crear usuarios, y subir documentación destinada al personal del
+                hospital. Entre otras funciones. entre otras fuciones que
+                explico mas a fondo en mi github.
               </p>
 
               <hr />
@@ -62,12 +62,15 @@ export const Cards = () => {
             </div>
 
             <div className="contenedor-code">
-              <a id="code" href="" target="_blank">
+              {/* <a id="code" href="" target="_blank">
                 <span>Ver Pagina</span>
-              </a>
+              </a> */}
 
-              <a href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP" target="_blank">
-                <img id="img-code" src={code} alt="" />
+              <a
+                href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP"
+                target="_blank"
+              >
+                <img id="img-code" src={git} alt="" />
               </a>
             </div>
           </div>
@@ -79,11 +82,13 @@ export const Cards = () => {
               <h3 id="titulo-card-proyectos">Consultorio Dentista</h3>
 
               <p className="descripcion-cart">
-                Proyecto de un consultorio web para dentistas que contiene un
-                login y un CRUD para que los administradores puedan gestionar
-                tanto a los dentistas como a los usuarios que asisten. Además,
-                cuenta con tablas de registros y de turnos, y una base de datos
-                diseñada y conectada con MySQL Workbench.
+                Proyecto de un consultorio web para dentistas que incluye un
+                sistema de login y un CRUD para que los administradores
+                gestionen tanto a los dentistas como a los pacientes. Además,
+                cuenta con tablas de registros y turnos, conectadas a una base
+                de datos diseñada en MySQL Workbench. Actualmente solo esta
+                subido el frontend, ya que no encuentro alojamiento para la base
+                datos
               </p>
 
               <hr />
@@ -124,11 +129,9 @@ export const Cards = () => {
               </a>
             </div>
           </div>
-          
         </div>
         <div className="contenedor-fila-proyectos2">
-
-        <div className="contenedor-cards" data-aos="flip-left">
+          <div className="contenedor-cards" data-aos="flip-left">
             <div className="carta">
               <img className="portada-card" src={tienda} alt="" />
 
