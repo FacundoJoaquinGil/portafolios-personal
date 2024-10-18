@@ -6,7 +6,7 @@ import flecha from "../assets/flecha.png";
 export const Home = () => {
   return (
     <>
-      <div className="contenedor-home" data-aos="zoom-in">
+      <div className="contenedor-home">
         <div className="contenedor-encabezado">
           <div className="contenedor-titulos">
             <h1 id="titulo">Facundo Joaquin Gil</h1>

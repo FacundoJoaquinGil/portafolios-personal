@@ -1,3 +1,6 @@
+import imgsm from "../assets/img-sm.jpg";
+
+
 export const SobreMi = () => {
   return (
     <>
@@ -8,20 +11,16 @@ export const SobreMi = () => {
           <h1 id="sm-titulo">Sobre Mi:</h1>
           <div className="contenedor-desc-lista">
             <p id="descripcion-sm">
-              Autodidacta, curioso y responsable. Comprometido con el
-              aprendizaje continuo y el desarrollo de soluciones tecnológicas
-              efectivas. Excelente disposición para enfrentar desafíos laborales
+              Autodidacta, curioso y responsable, con una sólida formación como
+              Técnico Universitario en Programación por la Universidad
+              Tecnológica Nacional - FRT. A mis 25 años, resido en Tucumán,
+              Argentina, y me comprometo con el aprendizaje continuo y el
+              desarrollo de soluciones tecnológicas efectivas, estando
+              plenamente disponible para asumir cualquier desafío laboral.
             </p>
 
-            <div className="contenedor-lista">
-              <ul id="lista">
-                <li>Edad: 25 Años</li>
-                <li>Fecha De Nacimiento: 12/10/1999</li>
-                <li>Nacionalidad: Argentina</li>
-                <li>Residencia: Tucuman, Argentina</li>
-                <li>Titulo Academico: Tecnico Universitario En Programacion</li>
-                <li>Lugar: Universidad Tecnologica Nacional - FRT</li>
-              </ul>
+            <div className="contenedor-imagen-sm">
+              <img id="img-sm" src={imgsm} />
             </div>
           </div>
         </div>

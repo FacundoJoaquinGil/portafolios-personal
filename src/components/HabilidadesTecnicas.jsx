@@ -1,3 +1,10 @@
+import React from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css/bundle";
+// import 'swiper/css/autoplay';
+
 import css from "../assets/css.png";
 import html from "../assets/html.png";
 import js from "../assets/js.png";
@@ -12,168 +19,67 @@ import postman from "../assets/postman.png";
 import CSharp from "../assets/CSharp.png";
 
 export const HabilidadesTecnicas = () => {
+  const skills = [
+    { src: html, alt: "HTML" },
+    { src: css, alt: "CSS" },
+    { src: js, alt: "JavaScript" },
+    { src: react, alt: "React" },
+    { src: bootstrap, alt: "Bootstrap" },
+    { src: node, alt: "Node.js" },
+    { src: sql, alt: "SQL" },
+    { src: CSharp, alt: "C#" },
+    { src: mongo, alt: "MongoDB" },
+    { src: docker, alt: "Docker" },
+    { src: postman, alt: "Postman" },
+    { src: git, alt: "Git" },
+  ];
+
   return (
-    <> 
-
-    
-
     <div className="contenedor-ht">
-      
-    <hr id="separador"/>
-    
-    <h1 id="titulo-ht">Habilidades Tecnicas</h1>
+      <hr id="separador" />
+      <h1 id="titulo-ht">Habilidades Técnicas</h1>
 
-          <div className="container d-flex justify-content-center" data-aos="fade-right">
-            
-            <div className="row col-6 d-flex justify-content-center" >
-
-              <div className="col-6 col-md-auto">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={html} alt="" />
-                  </div>
-                  
+      <div className="container">
+        <Swiper
+          spaceBetween={20}
+          autoplay={{
+            delay: 750,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          loop={true}
+          freeMode={true}
+          modules={[Autoplay]}
+          breakpoints={{
+            320: {
+              slidesPerView: 3, // Para pantallas pequeñas
+            },
+            440: {
+              slidesPerView: 4, // Para pantallas medianas
+            },
+            770: {
+              slidesPerView: 5, // Para pantallas grandes
+            },
+            990: {
+              slidesPerView: 7, // Para pantallas muy grandes
+            },
+            1200: {
+              slidesPerView: 9, // Para pantallas ultra grandes
+            },
+          }}
+          className="mySwiper"
+        >
+          {skills.map((skill, index) => (
+            <SwiperSlide key={index}>
+              <div className="card skill-card">
+                <div className="card-img">
+                  <img className="img-fluid" src={skill.src} alt={skill.alt} />
                 </div>
-
               </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={css} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={js} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={react} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={bootstrap} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={node} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={sql} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={CSharp} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={mongo} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={docker} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={postman} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-              <div className="col-6 col-md-auto ">
-                
-                <div className="card skill-card">
-
-                  <div className="card-img">
-                    <img className="img-fluid" src={git} alt="" />
-                  </div>
-                  
-                </div>
-
-              </div>
-
-          </div>
-        </div>
-        </div>
-    </>
-    
-  )
-}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  );
+};

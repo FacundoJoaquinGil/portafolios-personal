@@ -13,8 +13,8 @@ export const App = () => {
     <NavBar/>
     <Home/>
     <SobreMi/>
-    <HabilidadesTecnicas/>
     <Cards/>
+    <HabilidadesTecnicas/>
     <Form/>
     </>
   )
