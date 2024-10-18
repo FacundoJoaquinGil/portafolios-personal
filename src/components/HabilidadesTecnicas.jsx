@@ -44,11 +44,11 @@ export const HabilidadesTecnicas = () => {
           spaceBetween={20}
           autoplay={{
             delay: 750,
-            disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
           loop={true}
-          freeMode={true}
+          freeMode = {true}
+          momentum={true}
           modules={[Autoplay]}
           breakpoints={{
             320: {

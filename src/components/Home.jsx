@@ -11,7 +11,8 @@ export const Home = () => {
           <div className="contenedor-titulos">
             <h1 id="titulo">Facundo Joaquin Gil</h1>
             <h3 id="subtitulo">Programador Fullstack</h3>
-            <span id="saludo">print("Hola Mundo")</span>
+            <span id="saludo">console.log("Hola Mundo!");
+            </span>
           </div>
 
           <div className="contenedor-perfil">

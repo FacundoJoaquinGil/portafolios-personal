@@ -169,6 +169,10 @@
         font-size: 2em;
     }
 
+    .contenedor-titulos #saludo {
+        font-size: 1.1em;
+    }
+
     .contenedor-perfil #perfil-img {
         width: 200px;
         height: 200px;
@@ -193,7 +197,7 @@
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 20ch;
+    width: 27ch;
     font-size: 2em;
     margin-top: 20px;
     letter-spacing: 0.02em;
@@ -469,6 +473,10 @@
 
     .contenedor-imagen-sm {
         font-size: 15px;
+    }
+
+    #img-sm {
+        width: 300px;
     }
 
 }
