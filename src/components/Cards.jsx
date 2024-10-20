@@ -16,11 +16,8 @@ import hosp from "../assets/hospital.jpg";
 export const Cards = () => {
   return (
     <>
-      <div id="navbar-card"></div>
-
       <hr id="separador" />
-
-      <h1 id="titulo-proyectos">Proyectos</h1>
+      <h1 id="titulo-proyectos">Proyectos Destacables</h1>
 
       <div className="contenedor-proyectos">
         <div className="contenedor-fila-proyectos1">

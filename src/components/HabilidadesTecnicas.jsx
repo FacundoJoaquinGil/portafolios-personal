@@ -35,51 +35,57 @@ export const HabilidadesTecnicas = () => {
   ];
 
   return (
-    <div className="contenedor-ht">
-      <hr id="separador" />
-      <h1 id="titulo-ht">Habilidades Técnicas</h1>
+    <>
+      <div className="contenedor-ht">
+        <hr id="separador" />
+        <h1 id="titulo-ht">Habilidades Técnicas</h1>
 
-      <div className="container">
-        <Swiper
-          spaceBetween={20}
-          autoplay={{
-            delay: 750,
-            pauseOnMouseEnter: true,
-          }}
-          loop={true}
-          freeMode = {true}
-          momentum={true}
-          modules={[Autoplay]}
-          breakpoints={{
-            320: {
-              slidesPerView: 3, // Para pantallas pequeñas
-            },
-            440: {
-              slidesPerView: 4, // Para pantallas medianas
-            },
-            770: {
-              slidesPerView: 5, // Para pantallas grandes
-            },
-            990: {
-              slidesPerView: 7, // Para pantallas muy grandes
-            },
-            1200: {
-              slidesPerView: 9, // Para pantallas ultra grandes
-            },
-          }}
-          className="mySwiper"
-        >
-          {skills.map((skill, index) => (
-            <SwiperSlide key={index}>
-              <div className="card skill-card">
-                <div className="card-img">
-                  <img className="img-fluid" src={skill.src} alt={skill.alt} />
+        <div className="container">
+          <Swiper
+            spaceBetween={20}
+            autoplay={{
+              delay: 750,
+              pauseOnMouseEnter: true,
+            }}
+            loop={true}
+            freeMode={true}
+            momentum={true}
+            modules={[Autoplay]}
+            breakpoints={{
+              320: {
+                slidesPerView: 3, // Para pantallas pequeñas
+              },
+              440: {
+                slidesPerView: 4, // Para pantallas medianas
+              },
+              770: {
+                slidesPerView: 5, // Para pantallas grandes
+              },
+              990: {
+                slidesPerView: 7, // Para pantallas muy grandes
+              },
+              1200: {
+                slidesPerView: 9, // Para pantallas ultra grandes
+              },
+            }}
+            className="mySwiper"
+          >
+            {skills.map((skill, index) => (
+              <SwiperSlide key={index}>
+                <div className="card skill-card">
+                  <div className="card-img">
+                    <img
+                      className="img-fluid"
+                      src={skill.src}
+                      alt={skill.alt}
+                    />
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </>
   );
 };

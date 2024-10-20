@@ -64,8 +64,6 @@ export const Form = () => {
 
   return (
     <>
-      <div id="navbar-form"></div>
-
       <hr id="separador" />
 
       <h1 id="sm-titulo">Contactos</h1>

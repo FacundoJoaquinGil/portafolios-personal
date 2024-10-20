@@ -33,6 +33,7 @@
 
 
 #links a {
+    margin-right: 50px;
     font-size: 20px;
     font-weight: 600;
     color: white;
@@ -649,7 +650,7 @@
     justify-content: center;
     content: '';
     margin: 0 auto;
-    width: 9rem;
+    width: 20rem;
     height: 3px;
     background-color: #706474;
 }
