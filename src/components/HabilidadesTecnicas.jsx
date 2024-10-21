@@ -53,19 +53,19 @@ export const HabilidadesTecnicas = () => {
             modules={[Autoplay]}
             breakpoints={{
               320: {
-                slidesPerView: 3, // Para pantallas pequeñas
+                slidesPerView: 3, 
               },
               440: {
-                slidesPerView: 4, // Para pantallas medianas
+                slidesPerView: 4,
               },
               770: {
-                slidesPerView: 5, // Para pantallas grandes
+                slidesPerView: 5, 
               },
               990: {
-                slidesPerView: 7, // Para pantallas muy grandes
+                slidesPerView: 7, 
               },
               1200: {
-                slidesPerView: 9, // Para pantallas ultra grandes
+                slidesPerView: 9, 
               },
             }}
             className="mySwiper"

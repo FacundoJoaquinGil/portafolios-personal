@@ -1,4 +1,5 @@
 import './app.css';
+import { useEffect } from 'react';
 import { NavBar } from "./components/NavBar";
 import { Home } from "./components/Home";
 import { SobreMi } from "./components/SobreMi";
@@ -7,6 +8,18 @@ import { Form } from "./components/Form";
 import { Cards } from "./components/Cards";
 
 export const App = () => {
+
+  // Hook para manejar la redirección en caso de URL incorrecta o refresco
+  useEffect(() => {
+    const validRoutes = ['/', '/sobre-mi', '/proyectos', '/skills', '/contact'];
+    const currentPath = window.location.pathname;
+
+    // Si la ruta actual no es válida, redirige al Home y actualiza la URL
+    if (!validRoutes.includes(currentPath)) {
+      window.location.replace('/');  // Reemplaza la URL actual por "/"
+    }
+  }, []);
+
   return (
     <>
       <NavBar />

@@ -9,7 +9,6 @@ import node from "../assets/node.png";
 import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
-import mas from "../assets/mas.png";
 import git from "../assets/git-logo-blanco.png";
 import hosp from "../assets/hospital.jpg";
 
@@ -63,11 +62,9 @@ export const Cards = () => {
                 <span>Ver Pagina</span>
               </a> */}
 
-              <a
-                href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP"
-                target="_blank"
-              >
-                <img id="img-code" src={git} alt="" />
+              <a className="contenedor-link" href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP" target="_blank">
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} />
               </a>
             </div>
           </div>
@@ -111,18 +108,12 @@ export const Cards = () => {
 
             <div className="contenedor-code">
               <a
-                id="code"
-                href="https://consultorio-dentista.onrender.com/"
-                target="_blank"
-              >
-                <span>Ver Pagina</span>
-              </a>
-
-              <a
+                className="contenedor-link"
                 href="https://github.com/FacundoJoaquinGil/consultorio-dentista-front"
                 target="_blank"
               >
-                <img id="img-code" src={code} alt="" />
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} />
               </a>
             </div>
           </div>
@@ -165,18 +156,12 @@ export const Cards = () => {
 
             <div className="contenedor-code">
               <a
-                id="code"
-                href="https://proyecto-tienda-ropa-react.netlify.app/"
-                target="_blank"
-              >
-                <span>Ver Pagina</span>
-              </a>
-
-              <a
+                className="contenedor-link"
                 href="https://github.com/FacundoJoaquinGil/Proyecto-Tienda-Ropa"
                 target="_blank"
               >
-                <img id="img-code" src={code} alt="" />
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} />
               </a>
             </div>
           </div>
@@ -215,25 +200,19 @@ export const Cards = () => {
 
             <div className="contenedor-code">
               <a
-                id="code"
-                href="https://biblioteca-escolar-js.netlify.app/"
-                target="_blank"
-              >
-                <span>Ver Pragina</span>
-              </a>
-
-              <a
+                className="contenedor-link"
                 href="https://github.com/FacundoJoaquinGil/biblioteca-escolar"
                 target="_blank"
               >
-                <img id="img-code" src={code} alt="" />
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} />
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="footer-card">
+      {/* <div className="footer-card">
         <a
           className="contenedor-ver-mas-proyectos"
           href="https://github.com/FacundoJoaquinGil?tab=repositories"
@@ -242,7 +221,7 @@ export const Cards = () => {
           <span id="boton-ver-mas-proyectos">Mira mas proyectos aqui</span>
           <img id="mas" src={mas} />
         </a>
-      </div>
+      </div> */}
     </>
   );
 };
