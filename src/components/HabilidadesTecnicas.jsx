@@ -17,6 +17,9 @@ import mongo from "../assets/mongo.png";
 import docker from "../assets/docker.png";
 import postman from "../assets/postman.png";
 import CSharp from "../assets/CSharp.png";
+import python from "../assets/python.png";
+import firebase from "../assets/firebase.png";
+import tsc from "../assets/tsc.png";
 
 export const HabilidadesTecnicas = () => {
   const skills = [
@@ -31,7 +34,9 @@ export const HabilidadesTecnicas = () => {
     { src: mongo, alt: "MongoDB" },
     { src: docker, alt: "Docker" },
     { src: postman, alt: "Postman" },
-    { src: git, alt: "Git" },
+    { src: python, alt: "python" },
+    { src: firebase, alt: "firebase" },
+    { src: tsc, alt: "tsc" },
   ];
 
   return (

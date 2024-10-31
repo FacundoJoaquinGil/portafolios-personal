@@ -3,11 +3,29 @@ body{
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
-   max-height: 135vh;
+   max-height: 100vh;
    background-color: #221f26;
+   
+  
+
 } 
 
+*{
+::-webkit-scrollbar {
+   width: 12px; 
+}
 
+::-webkit-scrollbar-track {
+   background-color: rgb(112, 100, 116);
+   /* border-radius: 2px; */
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: rgb(231, 61, 55); 
+   /* border-radius: 2px; */
+}
+
+}
 
 
 

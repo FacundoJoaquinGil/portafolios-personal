@@ -10,7 +10,10 @@ import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
 import git from "../assets/git-logo-blanco.png";
+import python from "../assets/python.png";
+import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital.jpg";
+import yaya from "../assets/yaya.png";
 
 export const Cards = () => {
   return (
@@ -18,26 +21,24 @@ export const Cards = () => {
       <hr id="separador" />
       <h1 id="titulo-proyectos">Proyectos Destacables</h1>
 
-      <div className="contenedor-proyectos">
-        <div className="contenedor-fila-proyectos1">
-          <div className="contenedor-cards" data-aos="flip-left">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
             <div className="carta">
               <img className="portada-card" src={hosp} alt="" />
-
               <h3 id="titulo-card-proyectos">Pagina Web Hospital</h3>
-
               <p className="descripcion-cart">
                 Plataforma web para el Hospital de San Pablo-Tucumán que permite
                 a los visitantes informarse sobre noticias médicas, consultar el
                 personal disponible y sus horarios. Cuenta con un panel de
                 administración donde los administradores pueden gestionar y
                 crear usuarios, y subir documentación destinada al personal del
-                hospital. Entre otras funciones. entre otras fuciones que
-                explico mas a fondo en mi github.
+                hospital.
               </p>
-
               <hr />
-
               <div className="contenedor-lenguajes">
                 <div className="lenguajes-utilizados">
                   <img src={html} alt="" />
@@ -56,37 +57,31 @@ export const Cards = () => {
                 </div>
               </div>
             </div>
-
             <div className="contenedor-code">
-              {/* <a id="code" href="" target="_blank">
-                <span>Ver Pagina</span>
-              </a> */}
-
-              <a className="contenedor-link" href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP" target="_blank">
+              <a
+                className="contenedor-link"
+                href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP"
+                target="_blank"
+              >
                 <span id="link-proyecto">Ver Proyecto</span>
-                <img id="img-codigo" src={code} />
+                <img id="img-codigo" src={code} alt="" />
               </a>
             </div>
           </div>
 
-          <div className="contenedor-cards" data-aos="flip-left">
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
             <div className="carta">
               <img className="portada-card" src={consultorio} alt="" />
-
               <h3 id="titulo-card-proyectos">Consultorio Dentista</h3>
-
               <p className="descripcion-cart">
                 Proyecto de un consultorio web para dentistas que incluye un
                 sistema de login y un CRUD para que los administradores
-                gestionen tanto a los dentistas como a los pacientes. Además,
-                cuenta con tablas de registros y turnos, conectadas a una base
-                de datos diseñada en MySQL Workbench. Actualmente solo esta
-                subido el frontend, ya que no encuentro alojamiento para la base
-                datos
+                gestionen tanto a los dentistas como a los pacientes.
               </p>
-
               <hr />
-
               <div className="contenedor-lenguajes">
                 <div className="lenguajes-utilizados">
                   <img src={html} alt="" />
@@ -105,7 +100,6 @@ export const Cards = () => {
                 </div>
               </div>
             </div>
-
             <div className="contenedor-code">
               <a
                 className="contenedor-link"
@@ -113,28 +107,24 @@ export const Cards = () => {
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
-                <img id="img-codigo" src={code} />
+                <img id="img-codigo" src={code} alt="" />
               </a>
             </div>
           </div>
-        </div>
-        <div className="contenedor-fila-proyectos2">
-          <div className="contenedor-cards" data-aos="flip-left">
+
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
             <div className="carta">
               <img className="portada-card" src={tienda} alt="" />
-
               <h3 id="titulo-card-proyectos">Tienda de Ropa</h3>
-
               <p className="descripcion-cart">
                 Proyecto de página web de venta de ropa diseñado con React/Vite,
                 el cual tiene un CRUD para administradores que permite agregar,
-                eliminar y editar prendas. Estas se alojan en una base de datos
-                local hecha con JSON Server, y cada prenda subida redirige al
-                comprador al WhatsApp del vendedor.
+                eliminar y editar prendas.
               </p>
-
               <hr />
-
               <div className="contenedor-lenguajes">
                 <div className="lenguajes-utilizados">
                   <img src={html} alt="" />
@@ -153,7 +143,6 @@ export const Cards = () => {
                 </div>
               </div>
             </div>
-
             <div className="contenedor-code">
               <a
                 className="contenedor-link"
@@ -161,27 +150,25 @@ export const Cards = () => {
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
-                <img id="img-codigo" src={code} />
+                <img id="img-codigo" src={code} alt="" />
               </a>
             </div>
           </div>
 
-          <div className="contenedor-cards" data-aos="flip-left">
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
             <div className="carta">
               <img className="portada-card" src={biblioteca} alt="" />
-
               <h3 id="titulo-card-proyectos">Biblioteca Escolar</h3>
-
               <p className="descripcion-cart">
                 Proyecto de biblioteca escolar que contiene un CRUD que permite
                 agregar libros, eliminarlos y editarlos, además me permite hacer
                 lo mismo con usuarios, y prestar libros con una fecha límite de
-                préstamo, entre otras validaciones. La misma contiene una base
-                de datos local hecha con JSON Server.
+                préstamo.
               </p>
-
               <hr />
-
               <div className="contenedor-lenguajes">
                 <div className="lenguajes-utilizados">
                   <img src={html} alt="" />
@@ -197,7 +184,6 @@ export const Cards = () => {
                 </div>
               </div>
             </div>
-
             <div className="contenedor-code">
               <a
                 className="contenedor-link"
@@ -205,23 +191,76 @@ export const Cards = () => {
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
-                <img id="img-codigo" src={code} />
+                <img id="img-codigo" src={code} alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
+            <div className="carta">
+              <img className="portada-card" src={yaya} alt="" />
+              <h3 id="titulo-card-proyectos">La Yaya Eventos App</h3>
+              <p className="descripcion-cart">
+                Una aplicación creada para ayudar a los organizadores de eventos
+                a generar presupuestos detallados. Los presupuestos incluyen los
+                costos de la comida, pago de mozos, ayudantes de cocina y otros
+                gastos asociados.
+              </p>
+              <hr />
+              <div className="contenedor-lenguajes">
+                <div className="lenguajes-utilizados">
+                  <img src={CSharp} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="contenedor-code">
+              <a
+                className="contenedor-link"
+                href="https://github.com/FacundoJoaquinGil/La-Yaya-Eventos-App"
+                target="_blank"
+              >
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
+            <div className="carta">
+              <img className="portada-card" src={""} alt="" />
+              <h3 id="titulo-card-proyectos">Trascriptor de Voz</h3>
+              <p className="descripcion-cart">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                minus neque nemo, impedit reprehenderit quos odio quam? Quisquam
+                ab ducimus quaerat, modi nemo rerum quam reiciendis porro
+                explicabo sed temporibus!
+              </p>
+              <hr />
+              <div className="contenedor-lenguajes">
+                <div className="lenguajes-utilizados">
+                  <img src={python} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="contenedor-code">
+              <a
+                className="contenedor-link"
+                href="https://github.com/FacundoJoaquinGil/biblioteca-escolar"
+                target="_blank"
+              >
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} alt="" />
               </a>
             </div>
           </div>
         </div>
       </div>
-
-      {/* <div className="footer-card">
-        <a
-          className="contenedor-ver-mas-proyectos"
-          href="https://github.com/FacundoJoaquinGil?tab=repositories"
-          target="_blank"
-        >
-          <span id="boton-ver-mas-proyectos">Mira mas proyectos aqui</span>
-          <img id="mas" src={mas} />
-        </a>
-      </div> */}
     </>
   );
 };
