@@ -13,7 +13,7 @@ import python from "../assets/python.png";
 import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital.jpg";
 import yaya from "../assets/yaya.png";
-import trans from "../assets/Transcriptor.jpg"
+import trans from "../assets/Transcriptor.jpg";
 
 export const Cards = () => {
   return (
@@ -236,10 +236,11 @@ export const Cards = () => {
               <img className="portada-card" src={trans} alt="" />
               <h3 id="titulo-card-proyectos">Trascriptor de Voz</h3>
               <p className="descripcion-cart">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                minus neque nemo, impedit reprehenderit quos odio quam? Quisquam
-                ab ducimus quaerat, modi nemo rerum quam reiciendis porro
-                explicabo sed temporibus!
+                Este proyecto transforma archivos de audio en texto escrito.
+                Utiliza la biblioteca pydub para convertir archivos. Está
+                diseñado para facilitar la transcripción de notas de voz,
+                conferencias o cualquier audio hablado, automatizando el
+                proceso.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
