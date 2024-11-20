@@ -535,12 +535,12 @@
 
 }
 
-.container::before {
+.contenedor-ht .container::before {
     left: 0;
     background: linear-gradient(to right, #221f26, rgba(34, 31, 38, 0) 90%);
 }
 
-.container::after {
+.contenedor-ht .container::after {
     right: 0;
     background: linear-gradient(to left, #221f26, rgba(34, 31, 38, 0) 70%);
 }
