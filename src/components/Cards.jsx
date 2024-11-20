@@ -9,11 +9,11 @@ import node from "../assets/node.png";
 import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
-import git from "../assets/git-logo-blanco.png";
 import python from "../assets/python.png";
 import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital.jpg";
 import yaya from "../assets/yaya.png";
+import trans from "../assets/Transcriptor.jpg";
 
 export const Cards = () => {
   return (
@@ -22,7 +22,7 @@ export const Cards = () => {
       <h1 id="titulo-proyectos">Proyectos Destacables</h1>
 
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center g-0">
           <div
             className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
             data-aos="flip-left"
@@ -233,13 +233,13 @@ export const Cards = () => {
             data-aos="flip-left"
           >
             <div className="carta">
-              <img className="portada-card" src={""} alt="" />
+              <img className="portada-card" src={trans} alt="" />
               <h3 id="titulo-card-proyectos">Trascriptor de Voz</h3>
               <p className="descripcion-cart">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                minus neque nemo, impedit reprehenderit quos odio quam? Quisquam
-                ab ducimus quaerat, modi nemo rerum quam reiciendis porro
-                explicabo sed temporibus!
+                Este proyecto transforma archivos de audio en texto escrito.
+                Utiliza la biblioteca pydub para convertir archivos. Está diseñado para facilitar la
+                transcripción de notas de voz, conferencias o cualquier audio
+                hablado, automatizando el proceso.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
@@ -251,7 +251,7 @@ export const Cards = () => {
             <div className="contenedor-code">
               <a
                 className="contenedor-link"
-                href="https://github.com/FacundoJoaquinGil/biblioteca-escolar"
+                href="https://github.com/FacundoJoaquinGil/transcriptor-voz-python"
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
