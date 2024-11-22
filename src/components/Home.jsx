@@ -4,9 +4,11 @@ import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
 import cv from "../assets/cv.pdf";
 import download from "../assets/download.png";
+import cvImg from "../assets/cv.jpeg"; 
 import Swal from "sweetalert2";
 
 export const Home = () => {
+  
   const mostrarCurriculum = () => {
     Swal.fire({
       html: `
@@ -21,7 +23,7 @@ export const Home = () => {
           class="custom-scrollbar"
         >
           <img 
-            src="src/assets/cv.jpeg" 
+            src="${cvImg}" 
             alt="CV Image" 
             style="width: 100%; max-width: 789px; height: auto;" 
           />
