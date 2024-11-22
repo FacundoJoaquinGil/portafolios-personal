@@ -119,7 +119,7 @@
 
 @media (max-width: 1000px) {
     .contenedor-encabezado {
-        margin-top: -50px;
+        margin-top: -70px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -133,10 +133,31 @@
 
     .contenedor-curriculum #curriculum {
         padding: 0;
+
     }
 
     .contenedor-perfil #perfil-img {
         margin-top: 20px;
+    }
+
+    .contenedor-cvs {
+        margin-top: 15px;
+        margin-top: 10px;
+    }
+
+    .contenedor-curriculum {
+        border-radius: 30px;
+        padding: 7px !important;
+    }
+
+    .contenedor-download {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    #img-download {
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 
@@ -185,10 +206,6 @@
 
     .contenedor-redes #git {
         height: 40px;
-    }
-
-    .contenedor-curriculum {
-        margin-top: 15px !important;
     }
 }
 
@@ -258,16 +275,45 @@
     transform: scale(1.2);
 }
 
-.contenedor-curriculum {
+.contenedor-cvs {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenedor-curriculum {
+    display: flex;
     align-items: center;
     background: linear-gradient(to right, #E73C37, #852cce);
     border-radius: 30px;
     padding: 10px;
-    margin-top: 20px;
+    border: none;
     text-decoration: none;
     transition: padding-right 0.3s ease;
+}
+
+.contenedor-download {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #E73C37, #852cce);
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border: none;
+    margin-left: 15px;
+}
+
+.contenedor-download:hover {
+    transform: scale(1.1);
+}
+
+#img-download {
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
 }
 
 #curriculum {
@@ -350,12 +396,17 @@
 
     .contenedor-redes #linkedin,
     .contenedor-redes #git {
-        height: 30px;
+        height: 40px;
     }
 
-    .contenedor-curriculum {
-        padding: 5px;
-        margin-top: 10px;
+    .contenedor-download {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    #img-download {
+        width: 25px !important;
+        height: 25px !important;
     }
 
     .contenedor-curriculum #curriculum {
@@ -365,6 +416,7 @@
     #flecha {
         height: 10px;
     }
+
 }
 
 
@@ -520,8 +572,8 @@
     position: relative;
     overflow: hidden;
     padding: 20px 0;
-  }
-  
+}
+
 
 .container::before,
 .container::after {
@@ -671,7 +723,7 @@
             padding: .5rem 0;
             margin-bottom: 70px;
             color: #a89ec9;
-            height: 200px;
+            height: 150px;
         }
 
         .contenedor-lenguajes {
@@ -682,7 +734,7 @@
                 margin: 0;
                 margin-right: .5rem;
                 border-radius: 5%;
-                
+
                 background-color: #6d58f2;
                 box-shadow: 3px 3px #0000006d;
 
@@ -718,40 +770,40 @@
     }
 }
 
-.contenedor-link{
+.contenedor-link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background:  #6c27a5e2;
+    background: #6c27a5e2;
     border: solid 2px rgba(0, 0, 0, 0.238);
     border-radius: 5px;
     padding: 7px;
-    
+
     text-decoration: none;
     transition: padding-right 0.3s ease;
     filter: drop-shadow(3px 3px #00000037);
 }
 
-#link-proyecto{
+#link-proyecto {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: white;
 }
 
-#img-codigo{
+#img-codigo {
     padding-left: 10px;
     height: 20px;
     transition: transform 0.3s ease;
 }
 
-.contenedor-link:hover #img-codigo{
+.contenedor-link:hover #img-codigo {
     filter: drop-shadow(2px 2px #0000006d);
     transform: translateX(10px);
 }
 
 .contenedor-link:hover {
-    
+
     text-shadow: 2px 2px #00000074;
     padding-right: 20px;
     border: solid 1px rgba(255, 255, 255, 0.58);

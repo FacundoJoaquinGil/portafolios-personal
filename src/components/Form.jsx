@@ -1,7 +1,7 @@
 import mail from "../assets/mail.png";
 import telefono from "../assets/telefono.png";
 import discord from "../assets/discord.png";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 

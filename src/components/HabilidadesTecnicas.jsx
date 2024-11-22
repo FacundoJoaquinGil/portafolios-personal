@@ -1,10 +1,6 @@
-import React from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
-// import 'swiper/css/autoplay';
-
 import css from "../assets/css.png";
 import html from "../assets/html.png";
 import js from "../assets/js.png";
@@ -37,6 +33,7 @@ export const HabilidadesTecnicas = () => {
     { src: python, alt: "python" },
     { src: firebase, alt: "firebase" },
     { src: tsc, alt: "tsc" },
+    { src: git, alt: "git" },
   ];
 
   return (
@@ -54,23 +51,22 @@ export const HabilidadesTecnicas = () => {
             }}
             loop={true}
             freeMode={true}
-            momentum={true}
             modules={[Autoplay]}
             breakpoints={{
               320: {
-                slidesPerView: 3, 
+                slidesPerView: 3,
               },
               440: {
                 slidesPerView: 4,
               },
               770: {
-                slidesPerView: 5, 
+                slidesPerView: 5,
               },
               990: {
-                slidesPerView: 7, 
+                slidesPerView: 7,
               },
               1200: {
-                slidesPerView: 9, 
+                slidesPerView: 9,
               },
             }}
             className="mySwiper"
