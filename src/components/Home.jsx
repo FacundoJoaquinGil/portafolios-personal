@@ -10,29 +10,66 @@ import Swal from "sweetalert2";
 export const Home = () => {
   
   const mostrarCurriculum = () => {
+
     Swal.fire({
       html: `
         <div 
           style="
-            overflow-y: auto; 
-            max-height: 80vh; 
-            text-align: center; 
-            scrollbar-width: thin;
-            scrollbar-color: #888 #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
           "
-          class="custom-scrollbar"
         >
-          <img 
-            src="${cvImg}" 
-            alt="CV Image" 
-            style="width: 100%; max-width: 789px; height: auto;" 
-          />
+          <div class="spinner" style="
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #007BFF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+          "></div>
+          <p style="margin-top: 10px;">Cargando...</p>
         </div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
       `,
-      showConfirmButton: true,
-      confirmButtonText: "Volver",
+      showConfirmButton: false,
+      allowOutsideClick: false,
       width: "auto",
     });
+    
+    //Contenido principal
+
+    setTimeout(() => {
+      Swal.fire({
+        html: `
+          <div 
+            style="
+              overflow-y: auto; 
+              max-height: 80vh; 
+              text-align: center; 
+              scrollbar-width: thin;
+              scrollbar-color: #888 #e0e0e0;
+            "
+            class="custom-scrollbar"
+          >
+            <img 
+              src="${cvImg}" 
+              alt="CV Image" 
+              style="width: 100%; max-width: 789px; height: auto;" 
+            />
+          </div>
+        `,
+        showConfirmButton: true,
+        confirmButtonText: "Volver",
+        width: "auto",
+      });
+    }, 500); 
   };
 
   return (
