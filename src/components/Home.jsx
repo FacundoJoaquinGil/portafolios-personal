@@ -46,6 +46,7 @@ export const Home = () => {
     //Contenido principal
 
     setTimeout(() => {
+      
       Swal.fire({
         html: `
           <div 

@@ -77,9 +77,11 @@ export const Cards = () => {
               <img className="portada-card" src={consultorio} alt="" />
               <h3 id="titulo-card-proyectos">Consultorio Dentista</h3>
               <p className="descripcion-cart">
-                Proyecto de un consultorio web para dentistas que incluye un
-                sistema de login y un CRUD para que los administradores
-                gestionen tanto a los dentistas como a los pacientes.
+                Página web de venta de ropa diseñada con React y Vite. Incluye
+                un CRUD para que los administradores gestionen prendas,
+                permitiendo agregar, eliminar o editar artículos. Su diseño es
+                intuitivo y fácil de usar, adaptado para una experiencia de
+                escritorio eficiente.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
@@ -120,9 +122,11 @@ export const Cards = () => {
               <img className="portada-card" src={tienda} alt="" />
               <h3 id="titulo-card-proyectos">Tienda de Ropa</h3>
               <p className="descripcion-cart">
-                Proyecto de página web de venta de ropa diseñado con React/Vite,
-                el cual tiene un CRUD para administradores que permite agregar,
-                eliminar y editar prendas.
+                Página web de venta de ropa diseñada con React y Vite. Incluye
+                un CRUD para que los administradores gestionen prendas,
+                permitiendo agregar, eliminar o editar artículos. La interfaz es
+                moderna y está optimizada para ofrecer una experiencia fluida en
+                diferentes dispositivos.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
@@ -163,10 +167,11 @@ export const Cards = () => {
               <img className="portada-card" src={biblioteca} alt="" />
               <h3 id="titulo-card-proyectos">Biblioteca Escolar</h3>
               <p className="descripcion-cart">
-                Proyecto de biblioteca escolar que contiene un CRUD que permite
-                agregar libros, eliminarlos y editarlos, además me permite hacer
-                lo mismo con usuarios, y prestar libros con una fecha límite de
-                préstamo.
+                Biblioteca escolar con un sistema CRUD completo que permite
+                agregar libros, eliminarlos o editarlos. Además, incluye la
+                posibilidad de gestionar usuarios y realizar préstamos con
+                fechas límite. Es ideal para mantener el control del inventario
+                y las transacciones de libros.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
@@ -204,10 +209,11 @@ export const Cards = () => {
               <img className="portada-card" src={yaya} alt="" />
               <h3 id="titulo-card-proyectos">La Yaya Eventos App</h3>
               <p className="descripcion-cart">
-                Una aplicación creada para ayudar a los organizadores de eventos
-                a generar presupuestos detallados. Los presupuestos incluyen los
-                costos de la comida, pago de mozos, ayudantes de cocina y otros
-                gastos asociados.
+                Aplicación para organizadores de eventos que permite generar
+                presupuestos detallados. Los cálculos incluyen costos de comida,
+                pago de mozos, ayudantes de cocina y otros gastos relacionados.
+                Es una herramienta práctica y eficiente, ideal para mejorar la
+                planificación y organización de eventos.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
@@ -236,10 +242,11 @@ export const Cards = () => {
               <img className="portada-card" src={trans} alt="" />
               <h3 id="titulo-card-proyectos">Trascriptor de Voz</h3>
               <p className="descripcion-cart">
-                Este proyecto transforma archivos de audio en texto escrito.
-                Utiliza la biblioteca pydub para convertir archivos. Está diseñado para facilitar la
-                transcripción de notas de voz, conferencias o cualquier audio
-                hablado, automatizando el proceso.
+                Proyecto que transforma archivos de audio en texto mediante la
+                biblioteca pydub. Diseñado para facilitar la transcripción de
+                notas de voz, conferencias u otros audios hablados, automatiza
+                el proceso para ahorrar tiempo. Es una solución útil para
+                estudiantes, profesionales y periodistas.
               </p>
               <hr />
               <div className="contenedor-lenguajes">
