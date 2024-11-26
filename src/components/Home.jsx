@@ -70,7 +70,7 @@ export const Home = () => {
         confirmButtonText: "Volver",
         width: "auto",
       });
-    }, 500); 
+    }, 1000); 
   };
 
   return (
