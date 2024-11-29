@@ -4,13 +4,11 @@ import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
 import cv from "../assets/cv.pdf";
 import download from "../assets/download.png";
-import cvImg from "../assets/cv.jpeg"; 
+import cvImg from "../assets/cv.jpeg";
 import Swal from "sweetalert2";
 
 export const Home = () => {
-  
   const mostrarCurriculum = () => {
-
     Swal.fire({
       html: `
         <div 
@@ -42,11 +40,8 @@ export const Home = () => {
       allowOutsideClick: false,
       width: "auto",
     });
-    
-    //Contenido principal
 
     setTimeout(() => {
-      
       Swal.fire({
         html: `
           <div 
@@ -70,8 +65,36 @@ export const Home = () => {
         confirmButtonText: "Volver",
         width: "auto",
       });
-    }, 1000); 
+    }, 1000);
   };
+
+  const handleDownload = () => {
+    Swal.fire({
+      title: 'Preparando descarga...',
+      toast: true,
+      position: 'top-end',
+      icon: 'info',
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: true,
+      customClass: {
+        popup: 'custom-swal-toast',
+      },
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });    
+
+    setTimeout(() => {  
+      const link = document.createElement('a');
+      link.href = cv; 
+      link.download = 'CV_Joaquin_GiL.pdf';
+      document.body.appendChild(link); 
+      link.click();
+      document.body.removeChild(link);
+    }, 1500);
+  };
+  
 
   return (
     <>
@@ -103,7 +126,6 @@ export const Home = () => {
           </div>
 
           <div className="contenedor-cvs">
-            
             <button
               className="contenedor-curriculum"
               onClick={mostrarCurriculum}
@@ -112,9 +134,9 @@ export const Home = () => {
               <img id="flecha" src={flecha} />
             </button>
 
-            <a className="contenedor-download" href={cv} download="cv.pdf">
+            <button className="contenedor-download" onClick={handleDownload}>
               <img id="img-download" src={download} alt="Descargar CV" />
-            </a>
+            </button>
 
           </div>
         </div>

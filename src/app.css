@@ -310,6 +310,22 @@
     transform: scale(1.1);
 }
 
+/*Sweet Alert para distintas pantallas */
+
+.custom-swal-toast {
+    font-size: 16px; 
+    padding: 10px;   
+  }
+
+/* Para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .custom-swal-toast {
+      font-size: 12px;
+      width: 250px;  
+      padding: 8px;    
+    }
+}
+
 #img-download {
     margin: 0 auto;
     width: 35px;
@@ -1078,7 +1094,7 @@
 @media (max-width: 937px) {
     .contenedor-form {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 
     }
 
@@ -1087,6 +1103,7 @@
     }
 
     .contenedor-desc-contacto {
+        margin-top: 30px;
         padding-bottom: 20px;
     }
 }
