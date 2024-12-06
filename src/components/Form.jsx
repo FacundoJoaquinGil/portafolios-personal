@@ -39,7 +39,7 @@ export const Form = () => {
 
     emailjs
       .sendForm("service_kv3h4b8", "template_dr8henf", form.current, {
-        publicKey: "NubU2nN3Pc99shCns",
+        // publicKey: "NubU2nN3Pc99shCns",
       })
       .then(
         () => {
@@ -51,11 +51,11 @@ export const Form = () => {
           console.log("SUCCESS!");
           form.current.reset();
         },
-        (error) => {
+        () => {
           Swal.fire({
             icon: "error",
             title: "Error!",
-            text: "Se ha producido un error inesperado :(",
+            text: "Se ha producido un error inesperado :("
           });
           console.log("FAILED...");
         }

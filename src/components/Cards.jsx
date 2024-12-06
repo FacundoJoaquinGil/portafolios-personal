@@ -17,7 +17,7 @@ import trans from "../assets/Transcriptor.jpg";
 
 export const Cards = () => {
   return (
-    <>
+    <div className="bg-cards">
       <hr id="separador" />
       <h1 id="titulo-proyectos">Proyectos Destacables</h1>
 
@@ -268,6 +268,6 @@ export const Cards = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

@@ -8,7 +8,9 @@ import cvImg from "../assets/cv.jpeg";
 import Swal from "sweetalert2";
 
 export const Home = () => {
-  const mostrarCurriculum = () => {
+
+  const mostrarCurriculum = async () => {
+
     Swal.fire({
       html: `
         <div 
@@ -39,62 +41,62 @@ export const Home = () => {
       showConfirmButton: false,
       allowOutsideClick: false,
       width: "auto",
+      
     });
 
-    setTimeout(() => {
-      Swal.fire({
-        html: `
-          <div 
-            style="
-              overflow-y: auto; 
-              max-height: 80vh; 
-              text-align: center; 
-              scrollbar-width: thin;
-              scrollbar-color: #888 #e0e0e0;
-            "
-            class="custom-scrollbar"
-          >
-            <img 
-              src="${cvImg}" 
-              alt="CV Image" 
-              style="width: 100%; max-width: 789px; height: auto;" 
-            />
-          </div>
-        `,
-        showConfirmButton: true,
-        confirmButtonText: "Volver",
-        width: "auto",
-      });
-    }, 1000);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    Swal.fire({
+      html: `
+        <div 
+          style="
+            overflow-y: auto; 
+            max-height: 80vh; 
+            text-align: center; 
+            scrollbar-width: thin;
+            scrollbar-color: #888 #e0e0e0;
+          "
+          class="custom-scrollbar"
+        >
+          <img 
+            src="${cvImg}" 
+            alt="CV Image" 
+            style="width: 100%; max-width: 789px; height: auto;" 
+          />
+        </div>
+      `,
+      showConfirmButton: true,
+      confirmButtonText: "Volver",
+      width: "auto",
+    });
   };
 
   const handleDownload = () => {
     Swal.fire({
-      title: 'Preparando descarga...',
+      title: "Preparando descarga...",
       toast: true,
-      position: 'top-end',
-      icon: 'info',
+      position: "top-end",
+      icon: "info",
       showConfirmButton: false,
       timer: 1500,
       timerProgressBar: true,
       customClass: {
-        popup: 'custom-swal-toast',
+        popup: "custom-swal-toast",
       },
       didOpen: () => {
         Swal.showLoading();
       },
-    });    
+    });
 
-    setTimeout(() => {  
-      const link = document.createElement('a');
-      link.href = cv; 
-      link.download = 'CV_Joaquin_GiL.pdf';
-      document.body.appendChild(link); 
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = cv;
+      link.download = "CV_Joaquin_GiL.pdf";
+      document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     }, 1500);
   };
-  
 
   return (
     <>
@@ -137,7 +139,6 @@ export const Home = () => {
             <button className="contenedor-download" onClick={handleDownload}>
               <img id="img-download" src={download} alt="Descargar CV" />
             </button>
-
           </div>
         </div>
       </div>

@@ -10,13 +10,12 @@
 /* Componente Navbar */
 
 .contenedor-nav {
-
     background-color: rgba(255, 255, 255, 0.062);
-    box-shadow: 1px 3px rgba(255, 255, 255, 0.13);
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.13);    
 }
 
 .boton-nav {
-    border: 4px inset #86858538;
+    border: 2px inset #86858538;
     margin: 10px;
 }
 
@@ -345,7 +344,7 @@
 #flecha {
     padding-left: 10px;
     height: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease ;
 }
 
 .contenedor-curriculum:hover #flecha {
@@ -353,7 +352,7 @@
 }
 
 .contenedor-curriculum:hover {
-    padding-right: 20px;
+    padding-right: 20px !important;
 }
 
 @media (max-width: 932px) and (orientation: landscape) {
@@ -662,7 +661,9 @@
 
 /* Cards */
 
-
+.bg-cards{
+    background-color: #221f26;
+}
 
 
 @media only screen and (max-width: 1579px) {
@@ -693,7 +694,7 @@
     position: relative;
     font-weight: bold;
     font-size: 2rem;
-    background-color: #221f26;
+   
 }
 
 #titulo-proyectos::after {
