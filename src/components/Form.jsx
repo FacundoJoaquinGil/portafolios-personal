@@ -39,7 +39,7 @@ export const Form = () => {
 
     emailjs
       .sendForm("service_kv3h4b8", "template_dr8henf", form.current, {
-        // publicKey: "NubU2nN3Pc99shCns",
+        publicKey: "NubU2nN3Pc99shCns",
       })
       .then(
         () => {
