@@ -8,94 +8,98 @@ import cvImg from "../assets/cv.jpeg";
 import Swal from "sweetalert2";
 
 export const Home = () => {
-
   const mostrarCurriculum = async () => {
+    try {
+      Swal.fire({
+        html: `
+          <div 
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <div class="spinner" style="
+              border: 4px solid rgba(0, 0, 0, 0.1);
+              border-top: 4px solid #007BFF;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              animation: spin 1s linear infinite;
+            "></div>
+            <p style="margin-top: 10px;">Cargando...</p>
+          </div>
+          <style>
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+          </style>
+        `,
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        width: "auto",
+      });
 
-    Swal.fire({
-      html: `
-        <div 
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          "
-        >
-          <div class="spinner" style="
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-top: 4px solid #007BFF;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-          "></div>
-          <p style="margin-top: 10px;">Cargando...</p>
-        </div>
-        <style>
-          @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
-        </style>
-      `,
-      showConfirmButton: false,
-      allowOutsideClick: false,
-      width: "auto",
-      
-    });
+      await new Promise((resolve) => setTimeout(resolve, 500));
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    Swal.fire({
-      html: `
-        <div 
-          style="
-            overflow-y: auto; 
-            max-height: 80vh; 
-            text-align: center; 
-            scrollbar-width: thin;
-            scrollbar-color: #888 #e0e0e0;
-          "
-          class="custom-scrollbar"
-        >
-          <img 
-            src="${cvImg}" 
-            alt="CV Image" 
-            style="width: 100%; max-width: 789px; height: auto;" 
-          />
-        </div>
-      `,
-      showConfirmButton: true,
-      confirmButtonText: "Volver",
-      width: "auto",
-    });
+      Swal.fire({
+        html: `
+          <div 
+            style="
+              overflow-y: auto; 
+              max-height: 80vh; 
+              text-align: center; 
+              scrollbar-width: thin;
+              scrollbar-color: #888 #e0e0e0;
+            "
+            class="custom-scrollbar"
+          >
+            <img 
+              src="${cvImg}" 
+              alt="CV Image" 
+              style="width: 100%; max-width: 789px; height: auto;" 
+            />
+          </div>
+        `,
+        showConfirmButton: true,
+        confirmButtonText: "Volver",
+        width: "auto",
+      });
+    } catch (error) {
+      console.error("Error mostrando el CV:", error);
+    }
   };
 
-  const handleDownload = () => {
-    Swal.fire({
-      title: "Preparando descarga...",
-      toast: true,
-      position: "top-end",
-      icon: "info",
-      showConfirmButton: false,
-      timer: 1500,
-      timerProgressBar: true,
-      customClass: {
-        popup: "custom-swal-toast",
-      },
-      didOpen: () => {
-        Swal.showLoading();
-      },
-    });
+  const handleDownload = async () => {
+    try {
+      Swal.fire({
+        title: "Preparando descarga...",
+        toast: true,
+        position: "top-end",
+        icon: "info",
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        customClass: {
+          popup: "custom-swal-toast",
+        },
+        didOpen: () => {
+          Swal.showLoading();
+        },
+      });
+      await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    setTimeout(() => {
       const link = document.createElement("a");
       link.href = cv;
-      link.download = "CV_Joaquin_GiL.pdf";
+      link.download = "CV_Joaquin_Gil.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    }, 1500);
+    } catch (error) {
+      console.error("Error descargando el CV:", error);
+    }
   };
 
   return (
