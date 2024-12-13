@@ -6,22 +6,32 @@ import { SobreMi } from "./components/SobreMi";
 import { HabilidadesTecnicas } from "./components/HabilidadesTecnicas";
 import { Form } from "./components/Form";
 import { Cards } from "./components/Cards";
+import Snowfall from 'react-snowfall';
 
 export const App = () => {
-
-  // Hook para manejar la redirección en caso de URL incorrecta o refresco
+  
   useEffect(() => {
     const validRoutes = ['/', '/sobre-mi', '/proyectos', '/skills', '/contact'];
     const currentPath = window.location.pathname;
 
     // Si la ruta actual no es válida, redirige al Home y actualiza la URL
     if (!validRoutes.includes(currentPath)) {
-      window.location.replace('/');  // Reemplaza la URL actual por "/"
+      window.location.replace('/');  
     }
   }, []);
 
   return (
     <>
+      <Snowfall
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          zIndex: 1, 
+        }}
+      />
       <NavBar />
       <div id="home">
         <Home />
