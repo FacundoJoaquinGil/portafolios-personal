@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 export const Home = () => {
   const mostrarCurriculum = async () => {
     try {
+      
       Swal.fire({
         html: `
           <div 
@@ -42,7 +43,15 @@ export const Home = () => {
         width: "auto",
       });
 
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      const imagenCargada = new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = cvImg;
+        img.onload = () => resolve(img);
+        img.onerror = (error) =>
+          reject(new Error("Error cargando la imagen del CV"));
+      });
+
+      const img = await imagenCargada;
 
       Swal.fire({
         html: `
@@ -57,7 +66,7 @@ export const Home = () => {
             class="custom-scrollbar"
           >
             <img 
-              src="${cvImg}" 
+              src="${img.src}" 
               alt="CV Image" 
               style="width: 100%; max-width: 789px; height: auto;" 
             />
@@ -69,6 +78,11 @@ export const Home = () => {
       });
     } catch (error) {
       console.error("Error mostrando el CV:", error);
+      Swal.fire(
+        "Error",
+        "Hubo un problema al cargar el CV. Intenta nuevamente.",
+        "error"
+      );
     }
   };
 
