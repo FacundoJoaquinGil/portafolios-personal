@@ -8,6 +8,7 @@ import cvImg from "../assets/cv.jpeg";
 import Swal from "sweetalert2";
 
 export const Home = () => {
+
   const mostrarCurriculum = async () => {
     try {
       
@@ -43,12 +44,11 @@ export const Home = () => {
         width: "auto",
       });
 
-      const imagenCargada = new Promise((resolve, reject) => {
+      const imagenCargada = new Promise((resolve) => {
         const img = new Image();
         img.src = cvImg;
         img.onload = () => resolve(img);
-        img.onerror = (error) =>
-          reject(new Error("Error cargando la imagen del CV"));
+        
       });
 
       const img = await imagenCargada;
@@ -88,34 +88,57 @@ export const Home = () => {
 
   const handleDownload = async () => {
     try {
+
       Swal.fire({
         title: "Preparando descarga...",
         toast: true,
         position: "top-end",
         icon: "info",
         showConfirmButton: false,
-        timer: 1500,
         timerProgressBar: true,
         customClass: {
           popup: "custom-swal-toast",
         },
         didOpen: () => {
-          Swal.showLoading();
+          Swal.showLoading(); 
         },
       });
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+  
 
+      const response = await fetch(cv);
+      if (!response.ok) {
+        throw new Error("No se pudo acceder al archivo");
+      }
+  
       const link = document.createElement("a");
       link.href = cv;
       link.download = "CV_Joaquin_Gil.pdf";
-      document.body.appendChild(link);
-      link.click();
+      document.body.appendChild(link); 
+      link.click(); 
       document.body.removeChild(link);
+  
+
+      Swal.fire({
+        title: "Descarga iniciada",
+        toast: true,
+        position: "top-end",
+        icon: "success",
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+      });
     } catch (error) {
       console.error("Error descargando el CV:", error);
+  
+      Swal.fire({
+        title: "Error al descargar",
+        text: "Hubo un problema al descargar el archivo. Por favor, intenta de nuevo.",
+        icon: "error",
+        confirmButtonText: "Entendido",
+      });
     }
   };
-
+  
   return (
     <>
       <div className="contenedor-home">
