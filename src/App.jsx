@@ -6,7 +6,6 @@ import { SobreMi } from "./components/SobreMi";
 import { HabilidadesTecnicas } from "./components/HabilidadesTecnicas";
 import { Form } from "./components/Form";
 import { Cards } from "./components/Cards";
-import Snowfall from 'react-snowfall';
 
 export const App = () => {
   
@@ -22,16 +21,6 @@ export const App = () => {
 
   return (
     <>
-      <Snowfall
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100vw',
-          height: '100vh',
-          zIndex: 1, 
-        }}
-      />
       <NavBar />
       <div id="home">
         <Home />
