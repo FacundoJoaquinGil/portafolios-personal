@@ -16,6 +16,7 @@ import CSharp from "../assets/CSharp.png";
 import python from "../assets/python.png";
 import firebase from "../assets/firebase.png";
 import tsc from "../assets/tsc.png";
+import angular from "../assets/angular.png";
 
 export const HabilidadesTecnicas = () => {
   const skills = [
@@ -34,6 +35,7 @@ export const HabilidadesTecnicas = () => {
     { src: firebase, alt: "firebase" },
     { src: tsc, alt: "tsc" },
     { src: git, alt: "git" },
+    { src: angular, alt: "angular" },
   ];
 
   return (

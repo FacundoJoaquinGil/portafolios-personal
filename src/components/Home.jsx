@@ -4,7 +4,7 @@ import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
 import cv from "../assets/cv.pdf";
 import download from "../assets/download.png";
-import cvImg from "../assets/cv.jpeg";
+import cvImg from "../assets/cv.jpg";
 import Swal from "sweetalert2";
 
 export const Home = () => {
