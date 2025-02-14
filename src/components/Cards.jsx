@@ -9,7 +9,7 @@ import node from "../assets/node.png";
 import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
-import python from "../assets/python.png";
+import angular from "../assets/angular.png";
 import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital.jpg";
 import yaya from "../assets/yaya.png";
@@ -239,19 +239,18 @@ export const Cards = () => {
             data-aos="flip-left"
           >
             <div className="carta">
-              <img className="portada-card" src={trans} alt="" />
-              <h3 id="titulo-card-proyectos">Trascriptor de Voz</h3>
+              <img className="portada-card" src={""} alt="" />
+              <h3 id="titulo-card-proyectos">Tienda de Productos</h3>
               <p className="descripcion-cart">
-                Proyecto que transforma archivos de audio en texto mediante la
-                biblioteca pydub. Diseñado para facilitar la transcripción de
-                notas de voz, conferencias u otros audios hablados, automatiza
-                el proceso para ahorrar tiempo. Es una solución útil para
-                estudiantes, profesionales y periodistas.
+                Tienda de productos creada con Angular 17 que consume una API
+                para listar y visualizar detalles de artículos. Incluye un
+                formulario de contacto con validadores, ofreciendo una
+                experiencia dinámica e interactiva (En desarrollo).
               </p>
               <hr />
               <div className="contenedor-lenguajes">
                 <div className="lenguajes-utilizados">
-                  <img src={python} alt="" />
+                  <img src={angular} alt="" />
                 </div>
               </div>
             </div>
