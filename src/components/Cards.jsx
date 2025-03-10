@@ -9,11 +9,12 @@ import node from "../assets/node.png";
 import sql from "../assets/sql.png";
 import code from "../assets/code.png";
 import json from "../assets/json.png";
+import ts from "../assets/tsc.png";
 import angular from "../assets/angular.png";
 import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital.jpg";
 import yaya from "../assets/yaya.png";
-import trans from "../assets/Transcriptor.jpg";
+import tiendaAG from "../assets/tienda-angular.jpg";
 
 export const Cards = () => {
   return (
@@ -61,6 +62,48 @@ export const Cards = () => {
               <a
                 className="contenedor-link"
                 href="https://github.com/FacundoJoaquinGil/Web-Hospital-SP"
+                target="_blank"
+              >
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
+            <div className="carta">
+              <img className="portada-card" src={tiendaAG} alt="" />
+              <h3 id="titulo-card-proyectos">Tienda de Productos</h3>
+              <p className="descripcion-cart">
+                Tienda de productos creada con Angular 17 (Actualmente) que consume una API
+                para listar y visualizar detalles de artículos. Incluye un
+                formulario de contacto con validadores, ofreciendo una
+                experiencia dinámica e interactiva, ademas cuenta con un carrito de compras que guarda los 
+                datos dentro de un estado local (En desarrollo).
+              </p>
+              <hr />
+              <div className="contenedor-lenguajes">
+                <div className="lenguajes-utilizados">
+                  <img src={angular} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={ts} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={html} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={css} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="contenedor-code">
+              <a
+                className="contenedor-link"
+                href="https://github.com/FacundoJoaquinGil/landingPage-Angular"
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
@@ -234,37 +277,6 @@ export const Cards = () => {
             </div>
           </div>
 
-          <div
-            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
-            data-aos="flip-left"
-          >
-            <div className="carta">
-              <img className="portada-card" src={""} alt="" />
-              <h3 id="titulo-card-proyectos">Tienda de Productos</h3>
-              <p className="descripcion-cart">
-                Tienda de productos creada con Angular 17 que consume una API
-                para listar y visualizar detalles de artículos. Incluye un
-                formulario de contacto con validadores, ofreciendo una
-                experiencia dinámica e interactiva (En desarrollo).
-              </p>
-              <hr />
-              <div className="contenedor-lenguajes">
-                <div className="lenguajes-utilizados">
-                  <img src={angular} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="contenedor-code">
-              <a
-                className="contenedor-link"
-                href="https://github.com/FacundoJoaquinGil/transcriptor-voz-python"
-                target="_blank"
-              >
-                <span id="link-proyecto">Ver Proyecto</span>
-                <img id="img-codigo" src={code} alt="" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
