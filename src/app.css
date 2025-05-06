@@ -7,11 +7,14 @@
     margin: 10px auto;
 }
 
+
 /* Componente Navbar */
 
 .contenedor-nav {
     background-color: rgba(255, 255, 255, 0.062);
-    box-shadow: 1px 1px rgba(255, 255, 255, 0.13);    
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
 }
 
 .boton-nav {
@@ -759,7 +762,7 @@
                 box-shadow: 3px 3px #0000006d;
 
                 img {
-                    padding: 7px;
+                    padding: 4px;
                     width: 40px;
                     height: 40px;
                     filter: brightness(0) invert(1);

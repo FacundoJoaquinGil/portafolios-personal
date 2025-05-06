@@ -13,7 +13,7 @@ import ts from "../assets/tsc.png";
 import angular from "../assets/angular.png";
 import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital.jpg";
-import yaya from "../assets/yaya.png";
+import oca from "../assets/oca.png";
 import tiendaAG from "../assets/tienda-angular.jpg";
 
 export const Cards = () => {
@@ -104,6 +104,42 @@ export const Cards = () => {
               <a
                 className="contenedor-link"
                 href="https://github.com/FacundoJoaquinGil/landingPage-Angular"
+                target="_blank"
+              >
+                <span id="link-proyecto">Ver Proyecto</span>
+                <img id="img-codigo" src={code} alt="" />
+              </a>
+            </div>
+          </div>
+
+          
+          <div
+            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
+            data-aos="flip-left"
+          >
+            <div className="carta">
+              <img className="portada-card" src={oca} alt="" />
+              <h3 id="titulo-card-proyectos">Ocaranza Mec. Software</h3>
+              <p className="descripcion-cart">
+              Una aplicación diseñada a medida para un cliente que quería 
+              profesionalizar su taller mecánico. Guarda en una base de datos toda la información  
+              de sus clientes, con la posibilidad de generar archivos PDF de los registros. Además, permite 
+              generar presupuestos, guardarlos o imprimirlos y realiza los cálculos de costos de repuestos y mano de obra...
+              </p>
+              <hr />
+              <div className="contenedor-lenguajes">
+                <div className="lenguajes-utilizados">
+                  <img src={CSharp} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={sql} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="contenedor-code">
+              <a
+                className="contenedor-link"
+                href="https://github.com/FacundoJoaquinGil/AppMecanica"
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
@@ -236,39 +272,6 @@ export const Cards = () => {
               <a
                 className="contenedor-link"
                 href="https://github.com/FacundoJoaquinGil/biblioteca-escolar"
-                target="_blank"
-              >
-                <span id="link-proyecto">Ver Proyecto</span>
-                <img id="img-codigo" src={code} alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div
-            className="col-lg-4 col-md-6 col-sm-12 contenedor-cards"
-            data-aos="flip-left"
-          >
-            <div className="carta">
-              <img className="portada-card" src={yaya} alt="" />
-              <h3 id="titulo-card-proyectos">La Yaya Eventos App</h3>
-              <p className="descripcion-cart">
-                Aplicación para organizadores de eventos que permite generar
-                presupuestos detallados. Los cálculos incluyen costos de comida,
-                pago de mozos, ayudantes de cocina y otros gastos relacionados.
-                Es una herramienta práctica y eficiente, ideal para mejorar la
-                planificación y organización de eventos.
-              </p>
-              <hr />
-              <div className="contenedor-lenguajes">
-                <div className="lenguajes-utilizados">
-                  <img src={CSharp} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="contenedor-code">
-              <a
-                className="contenedor-link"
-                href="https://github.com/FacundoJoaquinGil/La-Yaya-Eventos-App"
                 target="_blank"
               >
                 <span id="link-proyecto">Ver Proyecto</span>
