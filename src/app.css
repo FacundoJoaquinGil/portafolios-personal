@@ -11,14 +11,18 @@
 /* Componente Navbar */
 
 .contenedor-nav {
-    background-color: rgba(255, 255, 255, 0.062);
-    box-shadow: 1px 1px rgba(255, 255, 255, 0.13);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.06); 
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
 }
 
+
 .boton-nav {
-    border: 2px inset #86858538;
     margin: 10px;
 }
 
@@ -33,7 +37,6 @@
     }
 }
 
-
 #links a {
     margin-right: 50px;
     font-size: 20px;
@@ -44,12 +47,10 @@
 
 #links a:hover {
     color: #E73C37;
-    text-shadow: 1px 3px 6px rgb(0, 0, 0);
 }
 
 
 /* Componente Home */
-
 .contenedor-home {
     display: flex;
     justify-content: center;
@@ -121,7 +122,7 @@
 
 @media (max-width: 1000px) {
     .contenedor-encabezado {
-        margin-top: -70px;
+        margin-top: 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -186,6 +187,7 @@
 
 @media (max-width: 570px) {
     .contenedor-titulos #titulo {
+
         font-size: 3em;
     }
 
