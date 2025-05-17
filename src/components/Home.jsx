@@ -4,87 +4,14 @@ import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
 import cv from "../assets/cv.pdf";
 import download from "../assets/download.png";
-import cvImg from "../assets/cv.jpg";
 import Swal from "sweetalert2";
 
 export const Home = () => {
 
-  const mostrarCurriculum = async () => {
-    try {
-      
-      Swal.fire({
-        html: `
-          <div 
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            "
-          >
-            <div class="spinner" style="
-              border: 4px solid rgba(0, 0, 0, 0.1);
-              border-top: 4px solid #007BFF;
-              border-radius: 50%;
-              width: 40px;
-              height: 40px;
-              animation: spin 1s linear infinite;
-            "></div>
-            <p style="margin-top: 10px;">Cargando...</p>
-          </div>
-          <style>
-            @keyframes spin {
-              0% { transform: rotate(0deg); }
-              100% { transform: rotate(360deg); }
-            }
-          </style>
-        `,
-        showConfirmButton: false,
-        allowOutsideClick: false,
-        width: "auto",
-      });
-
-      const imagenCargada = new Promise((resolve) => {
-        const img = new Image();
-        img.src = cvImg;
-        img.onload = () => resolve(img);
-        
-      });
-
-      const img = await imagenCargada;
-
-      Swal.fire({
-        html: `
-          <div 
-            style="
-              overflow-y: auto; 
-              max-height: 80vh; 
-              text-align: center; 
-              scrollbar-width: thin;
-              scrollbar-color: #888 #e0e0e0;
-            "
-            class="custom-scrollbar"
-          >
-            <img 
-              src="${img.src}" 
-              alt="CV Image" 
-              style="width: 100%; max-width: 789px; height: auto;" 
-            />
-          </div>
-        `,
-        showConfirmButton: true,
-        confirmButtonText: "Volver",
-        width: "auto",
-      });
-    } catch (error) {
-      console.error("Error mostrando el CV:", error);
-      Swal.fire(
-        "Error",
-        "Hubo un problema al cargar el CV. Intenta nuevamente.",
-        "error"
-      );
-    }
+ const mostrarCurriculum = () => {
+    window.open(cv, '_blank', 'noopener,noreferrer');
   };
+
 
   const handleDownload = async () => {
     try {
