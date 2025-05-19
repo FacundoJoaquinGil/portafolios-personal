@@ -2,14 +2,13 @@ import perfil from "../assets/perfil2.png";
 import linkedin from "../assets/linkedin-logo.png";
 import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
-import cv from "../assets/cv.pdf";
 import download from "../assets/download.png";
 import Swal from "sweetalert2";
 
 export const Home = () => {
 
  const mostrarCurriculum = () => {
-    window.open(cv, '_blank', 'noopener,noreferrer');
+    window.open('/cv.pdf', '_blank', 'noopener,noreferrer');
   };
 
 
@@ -32,13 +31,13 @@ export const Home = () => {
       });
   
 
-      const response = await fetch(cv);
+      const response = await fetch('/cv.pdf');
       if (!response.ok) {
         throw new Error("No se pudo acceder al archivo");
       }
   
       const link = document.createElement("a");
-      link.href = cv;
+      link.href = '/cv.pdf';
       link.download = "CV_Joaquin_Gil.pdf";
       document.body.appendChild(link); 
       link.click(); 

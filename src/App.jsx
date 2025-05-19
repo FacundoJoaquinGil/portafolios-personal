@@ -13,7 +13,6 @@ export const App = () => {
     const validRoutes = ['/', '/sobre-mi', '/proyectos', '/skills', '/contact'];
     const currentPath = window.location.pathname;
 
-    // Si la ruta actual no es válida, redirige al Home y actualiza la URL
     if (!validRoutes.includes(currentPath)) {
       window.location.replace('/');  
     }
