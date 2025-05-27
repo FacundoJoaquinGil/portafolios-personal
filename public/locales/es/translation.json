@@ -1,0 +1,12 @@
+{
+  "home": {
+    "subtitulo": "Programador Fullstack", 
+    "saludo": "console.log('Hola Mundo!')",
+    "cv":  "Ver Curriculum"
+  },
+  "nav": {
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "language": "Idioma"
+}

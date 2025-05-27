@@ -4,8 +4,11 @@ import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
 import download from "../assets/download.png";
 import Swal from "sweetalert2";
+import { useTranslation } from 'react-i18next';
 
 export const Home = () => {
+
+  const { t } = useTranslation();
 
  const mostrarCurriculum = () => {
     window.open('/cv.pdf', '_blank', 'noopener,noreferrer');
@@ -71,8 +74,8 @@ export const Home = () => {
         <div className="contenedor-encabezado">
           <div className="contenedor-titulos">
             <h1 id="titulo">Facundo Joaquin Gil</h1>
-            <h3 id="subtitulo">Programador Fullstack</h3>
-            <span id="saludo">console.log(&quot;Hola Mundo!&quot;);</span>
+            <h3 id="subtitulo">{t('home.subtitulo')}</h3>
+            <span id="saludo">{t('home.saludo')}</span>
           </div>
 
           <div className="contenedor-perfil">
@@ -99,7 +102,7 @@ export const Home = () => {
               className="contenedor-curriculum"
               onClick={mostrarCurriculum}
             >
-              <span id="curriculum">Ver Curriculum</span>
+              <span id="curriculum">{t('home.cv')}</span>
               <img id="flecha" src={flecha} />
             </button>
 

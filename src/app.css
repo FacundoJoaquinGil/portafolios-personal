@@ -10,15 +10,78 @@
 
 /* Componente Navbar */
 
+/* boton desplegable */
+.idiomas-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.idiomas-dropdown :hover{
+  color: #E73C37;
+ text-shadow: 2px 2px #00000074;
+}
+
+.dropdown-menu-language {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 200ms ease-in-out,
+              transform 200ms ease-in-out;
+  z-index: 100;
+}
+
+.idiomas-dropdown:hover .dropdown-menu-language {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-toggle-language {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dropdown-menu-language li {
+  margin: 5px 0;
+}
+
+.dropdown-menu-language li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dropdown-menu-language li button:hover {
+  color: #E73C37;
+}
+
+
+
+/* contenedor de navbar */
+
 .contenedor-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.06); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
@@ -326,16 +389,16 @@
 /*Sweet Alert para distintas pantallas */
 
 .custom-swal-toast {
-    font-size: 16px; 
-    padding: 10px;   
-  }
+    font-size: 16px;
+    padding: 10px;
+}
 
 /* Para pantallas pequeñas */
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .custom-swal-toast {
-      font-size: 12px;
-      width: 250px;  
-      padding: 8px;    
+        font-size: 12px;
+        width: 250px;
+        padding: 8px;
     }
 }
 
@@ -349,7 +412,7 @@
 #flecha {
     padding-left: 10px;
     height: 15px;
-    transition: transform 0.3s ease ;
+    transition: transform 0.3s ease;
 }
 
 .contenedor-curriculum:hover #flecha {
@@ -666,7 +729,7 @@
 
 /* Cards */
 
-.bg-cards{
+.bg-cards {
     background-color: #221f26;
 }
 
@@ -699,7 +762,7 @@
     position: relative;
     font-weight: bold;
     font-size: 2rem;
-   
+
 }
 
 #titulo-proyectos::after {
