@@ -1,12 +1,64 @@
 {
   "home": {
-    "subtitulo": "Programador Fullstack", 
+    "subtitulo": "Programador Fullstack",
     "saludo": "console.log('Hola Mundo!')",
-    "cv":  "Ver Curriculum"
+    "cv": "Ver Curriuculum"
   },
   "nav": {
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "sobre-mi": "Sobre Mi",
+    "proyectos": "Proyectos",
+    "tecnologias": "Tecnologias",
+    "contactos": "Contactos"
   },
-  "language": "Idioma"
+  "sobre-mi-seccion": {
+    "sobre-Mi-Titulo": "Sobre Mi",
+    "desc": "Autodidacta, curioso y responsable, con una sólida formación como Técnico Universitario en Programación por la Universidad Tecnológica Nacional. A mis 25 años, resido en Tucumán, Argentina, y me apasiona el aprendizaje continuo y la creación de soluciones tecnológicas efectivas. Estoy plenamente disponible para asumir nuevos desafíos laborales y contribuir con mi experiencia y dedicación"
+  },
+  "tecnologias-seccion": {
+    "tecnologias-titulo": "Tecnologias"
+  },
+  "contactos-seccion": {
+    "form": {
+      "contactos": "Contactos",
+      "nombre": "Nombre",
+      "mail": "Email o Telefono",
+      "msj": "Mensaje"
+    },
+    "mail": "Email",
+    "telefono": "Telefono",
+    "ds": "Discord"
+  },
+  "proyectos-seccion": {
+    "proyectos-titulo": "Proyectos Destacables",
+    "hospital": {
+      "titulo": "Pagina Web Hospital",
+      "desc": "Plataforma web para el Hospital de San Pablo-Tucumán que permite a los visitantes informarse sobre noticias médicas, consultar el personal disponible y sus horarios. Cuenta con un panel de administración donde los administradores pueden gestionar y crear usuarios, y subir documentación destinada al personal del hospital",
+      "ver": "Ver Proyecto"
+    },
+    "tienda": {
+      "titulo": "Tienda de Productos",
+      "desc": "Tienda de productos creada con Angular 17 (Actualmente) que consume una API para listar y visualizar detalles de artículos. Incluye un formulario de contacto con validadores, ofreciendo una experiencia dinámica e interactiva, ademas cuenta con un carrito de compras que guarda los datos dentro de un estado local (En desarrollo)",
+      "ver": "Ver Proyecto"
+    },
+    "ocaranza-software": {
+      "titulo": "Ocaranza Mec. Software",
+      "desc": "Una aplicación diseñada a medida para un cliente que quería profesionalizar su taller mecánico. Guarda en una base de datos toda la información de sus clientes, con la posibilidad de generar archivos PDF de los registros. Además, permite generar presupuestos, guardarlos o imprimirlos y realiza los cálculos de costos de repuestos y mano de obra...",
+      "ver": "Ver Proyecto"
+    },
+    "consultorio-dentista": {
+      "titulo": "Consultorio Dentista",
+      "desc": "Página web de venta de ropa diseñada con React y Vite. Incluye un CRUD para que los administradores gestionen prendas, permitiendo agregar, eliminar o editar artículos. Su diseño es intuitivo y fácil de usar, adaptado para una experiencia de escritorio eficiente.",
+      "ver": "Ver Proyecto"
+    },
+    "tienda-ropa":{
+      "titulo": "Tienda de Ropa",
+      "desc": "Página web de venta de ropa diseñada con React y Vite. Incluye un CRUD para que los administradores gestionen prendas, permitiendo agregar, eliminar o editar artículos. La interfaz es moderna y está optimizada para ofrecer una experiencia fluida en diferentes dispositivos",
+      "ver": "Ver Proyecto"
+    },
+    "biblioteca-escolar":{
+      "titulo": "Biblioteca Escolar",
+      "desc": "Biblioteca escolar con un sistema CRUD completo que permite agregar libros, eliminarlos o editarlos. Además, incluye la posibilidad de gestionar usuarios y realizar préstamos con fechas límite. Es ideal para mantener el control del inventario y las transacciones de libros",
+      "ver": "Ver Proyecto"
+    }
+  }
 }

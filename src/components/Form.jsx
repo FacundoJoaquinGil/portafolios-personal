@@ -4,8 +4,11 @@ import discord from "../assets/discord.png";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 
 export const Form = () => {
+  const { t } = useTranslation();
+
   const form = useRef();
 
   const mensajeEnviado = () => {
@@ -66,7 +69,7 @@ export const Form = () => {
     <>
       <hr id="separador" />
 
-      <h1 id="sm-titulo">Contactos</h1>
+      <h1 id="sm-titulo">{t("contactos-seccion.form.contactos")}</h1>
 
       <div className="contenedor-form" data-aos="fade-up">
         <div className="sub-contenedor-form">
@@ -75,17 +78,17 @@ export const Form = () => {
 
             <div className="input">
               <input id="input-nombre" type="text" name="user_name" required />
-              <label id="label-nombre">Nombre</label>
+              <label id="label-nombre">{t("contactos-seccion.form.nombre")}</label>
             </div>
 
             <div className="input">
               <input id="input-mail" type="text" name="user_email" required />
-              <label id="label-email">Email o Telefono</label>
+              <label id="label-email">{t("contactos-seccion.form.mail")}</label>
             </div>
 
             <div className="input">
               <input id="input-msj" type="text" name="message" required />
-              <label id="label-msj">Mensaje</label>
+              <label id="label-msj">{t("contactos-seccion.form.msj")}</label>
             </div>
 
             <div className="contenedor-boton">
@@ -104,7 +107,7 @@ export const Form = () => {
               </div>
 
               <div className="desc-contacto">
-                <h4 id="titulo-desc-contacto">Email</h4>
+                <h4 id="titulo-desc-contacto">{t("contactos-seccion.mail")}</h4>
                 <p id="parrafo-desc-contacto">facundojoagl@gmail.com</p>
               </div>
             </div>
@@ -115,7 +118,7 @@ export const Form = () => {
               </div>
 
               <div className="desc-contacto">
-                <h4 id="titulo-desc-contacto">Telefono</h4>
+                <h4 id="titulo-desc-contacto">{t("contactos-seccion.telefono")}</h4>
                 <p id="parrafo-desc-contacto">+54 3816566750</p>
               </div>
             </div>
@@ -126,7 +129,7 @@ export const Form = () => {
               </div>
 
               <div className="desc-contacto">
-                <h4 id="titulo-desc-contacto">Discord</h4>
+                <h4 id="titulo-desc-contacto">{t("contactos-seccion.ds")}</h4>
                 <p id="parrafo-desc-contacto">fac.joaquin</p>
               </div>
             </div>

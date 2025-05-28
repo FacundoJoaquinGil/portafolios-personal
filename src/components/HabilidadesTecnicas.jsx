@@ -17,8 +17,12 @@ import python from "../assets/python.png";
 import firebase from "../assets/firebase.png";
 import tsc from "../assets/tsc.png";
 import angular from "../assets/angular.png";
+import { useTranslation } from "react-i18next";
 
 export const HabilidadesTecnicas = () => {
+
+  const { t } = useTranslation();
+
   const skills = [
     { src: html, alt: "HTML" },
     { src: css, alt: "CSS" },
@@ -42,7 +46,7 @@ export const HabilidadesTecnicas = () => {
     <>
       <div className="contenedor-ht">
         <hr id="separador" />
-        <h1 id="titulo-ht">Habilidades Técnicas</h1>
+        <h1 id="titulo-ht">{t("tecnologias-seccion.tecnologias-titulo")}</h1>
 
         <div className="container">
           <Swiper

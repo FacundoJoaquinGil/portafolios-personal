@@ -11,64 +11,113 @@
 /* Componente Navbar */
 
 /* boton desplegable */
-.idiomas-dropdown {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
-}
-.idiomas-dropdown :hover{
-  color: #E73C37;
- text-shadow: 2px 2px #00000074;
-}
-
-.dropdown-menu-language {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-  list-style: none;
-  padding: 20px;
-  margin: 0;
-  opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-  transition: opacity 200ms ease-in-out,
-              transform 200ms ease-in-out;
-  z-index: 100;
+.language-selector-wrapper{
+  position: fixed; 
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.idiomas-dropdown:hover .dropdown-menu-language {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
 
-.dropdown-toggle-language {
-  background: transparent;
-  border: none;
+.select {
+  width: fit-content;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
+  transition: 300ms;
+  color: white;
+  overflow: hidden;
+  margin-right: 10px;
 }
 
-.dropdown-menu-language li {
-  margin: 5px 0;
-}
-
-.dropdown-menu-language li button {
-  background: none;
-  border: none;
-  cursor: pointer;
+.selected {
+  background-color: #2a2f3b;
   padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 100000;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.dropdown-menu-language li button:hover {
-  color: #E73C37;
+.arrow {
+  position: relative;
+  right: 0px;
+  height: 10px;
+  transform: rotate(-90deg);
+  width: 25px;
+  fill: white;
+  z-index: 100000;
+  transition: 300ms;
 }
 
+.options {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #2a2f3b;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.select:hover > .options {
+  opacity: 1;
+  top: 0;
+}
+
+.select:hover > .selected .arrow {
+  transform: rotate(0deg);
+}
+
+.option {
+  border-radius: 5px;
+  padding: 5px;
+  transition: 300ms;
+  background-color: #2a2f3b;
+  width: 100px;
+  font-size: 15px;
+}
+.option:hover {
+  background-color: #323741;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options label {
+  display: inline-block;
+}
+.options label::before {
+  content: attr(data-txt);
+}
+
+.options input[type="radio"]:checked + label {
+  display: none;
+}
+
+.options input[type="radio"]#all:checked + label {
+  display: none;
+}
+
+.select:has(.options input[type="radio"]#all:checked) .selected::before {
+  content: attr(data-default);
+}
+.select:has(.options input[type="radio"]#option-1:checked) .selected::before {
+  content: attr(data-one);
+}
+.select:has(.options input[type="radio"]#option-2:checked) .selected::before {
+  content: attr(data-two);
+}
+.select:has(.options input[type="radio"]#option-3:checked) .selected::before {
+  content: attr(data-three);
+}
 
 
 /* contenedor de navbar */
@@ -282,7 +331,7 @@
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 27ch;
+    width: 28ch;
     font-size: 2em;
     margin-top: 20px;
     letter-spacing: 0.02em;

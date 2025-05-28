@@ -1,0 +1,64 @@
+{
+"home": {
+"subtitulo": "Programador Fullstack",
+"saludo": "console.log('Olá Mundo!')",
+"cv": "Ver Currículo"
+},
+"nav": {
+"sobre-mi": "Sobre Mim",
+"proyectos": "Projetos",
+"tecnologias": "Tecnologias",
+"contactos": "Contatos"
+},
+"sobre-mi-seccion": {
+"sobre-Mi-Titulo": "Sobre Mim",
+"desc": "Autodidata, curioso e responsável, com sólida formação como Técnico Universitário em Programação pela Universidade Tecnológica Nacional. Aos 25 anos, resido em Tucumán, Argentina, e sou apaixonado por aprendizado contínuo e pela criação de soluções tecnológicas eficazes. Estou totalmente disponível para assumir novos desafios profissionais e contribuir com minha experiência e dedicação."
+},
+"tecnologias-seccion": {
+"tecnologias-titulo": "Tecnologias"
+},
+"contactos-seccion": {
+"form": {
+"contactos": "Contatos",
+"nombre": "Nome",
+"mail": "Email ou Telefone",
+"msj": "Mensagem"
+},
+"mail": "Email",
+"telefono": "Telefone",
+"ds": "Discord"
+},
+"proyectos-seccion": {
+"proyectos-titulo": "Projetos de Destaque",
+"hospital": {
+"titulo": "Site do Hospital",
+"desc": "Plataforma web para o Hospital de San Pablo-Tucumán que permite aos visitantes se informarem sobre notícias médicas, consultar o pessoal disponível e seus horários. Conta com um painel de administração onde os administradores podem gerenciar e criar usuários, além de enviar documentos destinados à equipe do hospital.",
+"ver": "Ver Projeto"
+},
+"tienda": {
+"titulo": "Loja de Produtos",
+"desc": "Loja de produtos criada com Angular 17 (atualmente), que consome uma API para listar e visualizar detalhes de itens. Inclui um formulário de contato com validadores, oferecendo uma experiência dinâmica e interativa. Além disso, conta com um carrinho de compras que armazena os dados localmente (em desenvolvimento).",
+"ver": "Ver Projeto"
+},
+"ocaranza-software": {
+"titulo": "Ocaranza Mec. Software",
+"desc": "Aplicação personalizada para um cliente que queria profissionalizar sua oficina mecânica. Armazena todas as informações de seus clientes em banco de dados, com possibilidade de gerar arquivos PDF dos registros. Também permite criar orçamentos, salvá-los ou imprimi-los e calcula os custos de peças e mão de obra...",
+"ver": "Ver Projeto"
+},
+"consultorio-dentista": {
+"titulo": "Consultório Odontológico",
+"desc": "Site de venda de roupas desenvolvido com React e Vite. Inclui um CRUD para que os administradores gerenciem peças, permitindo adicionar, excluir ou editar artigos. O design é intuitivo e fácil de usar, adaptado para uma experiência eficiente em desktop.",
+"ver": "Ver Projeto"
+},
+"tienda-ropa": {
+"titulo": "Loja de Roupas",
+"desc": "Site de venda de roupas desenvolvido com React e Vite. Inclui um CRUD para que os administradores gerenciem peças, permitindo adicionar, excluir ou editar artigos. A interface é moderna e otimizada para oferecer uma experiência fluida em diversos dispositivos.",
+"ver": "Ver Projeto"
+},
+"biblioteca-escolar": {
+"titulo": "Biblioteca Escolar",
+"desc": "Biblioteca escolar com sistema CRUD completo que permite adicionar, excluir ou editar livros. Também permite gerenciar usuários e realizar empréstimos com datas limite. Ideal para manter o controle do inventário e das transações de livros.",
+"ver": "Ver Projeto"
+}
+}
+}
