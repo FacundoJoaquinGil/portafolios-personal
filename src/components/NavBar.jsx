@@ -45,11 +45,11 @@ export const NavBar = () => {
             >
               {t('nav.contactos')}
             </a>
+        </Nav>
+        
           <div className="language-selector-wrapper">
             <LanguageSelector />
           </div>
-        </Nav>
-
 
       </Navbar.Collapse>
     </Navbar>

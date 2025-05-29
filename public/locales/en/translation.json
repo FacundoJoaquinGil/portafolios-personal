@@ -1,64 +1,74 @@
 {
-"home": {
-"subtitulo": "Fullstack Developer",
-"saludo": "console.log('Hello World!')",
-"cv": "View Curriculum"
-},
-"nav": {
-"sobre-mi": "About Me",
-"proyectos": "Projects",
-"tecnologias": "Skills",
-"contactos": "Contacts"
-},
-"sobre-mi-seccion": {
-"sobre-Mi-Titulo": "About Me",
-"desc": "Self-taught, curious, and responsible, with a solid background as a University Technician in Programming from the National Technological University. At 25 years old, I live in Tucumán, Argentina, and I'm passionate about continuous learning and creating effective technological solutions. I am fully available to take on new professional challenges and contribute with my experience and dedication."
-},
-"tecnologias-seccion": {
-"tecnologias-titulo": "Skills"
-},
-"contactos-seccion": {
-"form": {
-"contactos": "Contacts",
-"nombre": "Name",
-"mail": "Email or Phone",
-"msj": "Message"
-},
-"mail": "Email",
-"telefono": "Phone",
-"ds": "Discord"
-},
-"proyectos-seccion": {
-"proyectos-titulo": "Featured Projects",
-"hospital": {
-"titulo": "Hospital Website",
-"desc": "Web platform for the San Pablo Hospital in Tucumán that allows visitors to learn about medical news, check available staff and their schedules. It includes an admin panel where administrators can manage and create users, and upload documents intended for hospital staff.",
-"ver": "View Project"
-},
-"tienda": {
-"titulo": "Product Store",
-"desc": "Product store built with Angular 17 (currently) that consumes an API to list and display item details. Includes a contact form with validators, offering a dynamic and interactive experience. It also has a shopping cart that stores data in local state (in development).",
-"ver": "View Project"
-},
-"ocaranza-software": {
-"titulo": "Ocaranza Mech. Software",
-"desc": "A tailor-made application for a client who wanted to professionalize their mechanical workshop. It stores all client information in a database, with the ability to generate PDF records. It also allows budget generation, saving or printing them, and calculates parts and labor costs...",
-"ver": "View Project"
-},
-"consultorio-dentista": {
-"titulo": "Dentist Office",
-"desc": "Clothing store website built with React and Vite. Includes a CRUD system for administrators to manage garments, allowing them to add, delete, or edit items. The design is intuitive and user-friendly, tailored for an efficient desktop experience.",
-"ver": "View Project"
-},
-"tienda-ropa": {
-"titulo": "Clothing Store",
-"desc": "Clothing store website built with React and Vite. Includes a CRUD system for administrators to manage garments, allowing them to add, delete, or edit items. The interface is modern and optimized to offer a smooth experience across different devices.",
-"ver": "View Project"
-},
-"biblioteca-escolar": {
-"titulo": "School Library",
-"desc": "School library system with full CRUD functionality that allows adding, deleting, or editing books. It also allows user management and book loans with deadlines. Ideal for keeping track of inventory and book transactions.",
-"ver": "View Project"
-}
-}
+  "home": {
+    "subtitulo": "Fullstack Developer",
+    "saludo": "console.log('Hello World!')",
+    "cv": "View Résumé",
+    "preparando": "Preparing download...",
+    "descargando": "Download started",
+    "error": "Download error"
+  },
+  "nav": {
+    "sobre-mi": "About Me",
+    "proyectos": "Projects",
+    "tecnologias": "Technologies",
+    "contactos": "Contacts"
+  },
+  "sobre-mi-seccion": {
+    "sobre-Mi-Titulo": "About Me",
+    "desc": "Self-taught, curious, and responsible developer with a strong academic background as a University Technician in Programming from the National Technological University. I’m 25 years old, based in Tucumán, Argentina, passionate about continuous learning and building effective tech solutions. Fully available to take on new challenges and contribute with dedication and experience."
+  },
+  "tecnologias-seccion": {
+    "tecnologias-titulo": "Technologies"
+  },
+  "contactos-seccion": {
+    "alerta": {
+      "enviando": "Sending message...",
+      "enviado": "Sent!",
+      "enviado-desc": "Your message was successfully delivered :)",
+      "error": "Error!",
+      "error-desc": "An unexpected error has occurred :("
+    },
+    "form": {
+      "contactos": "Contacts",
+      "nombre": "Name",
+      "mail": "Email or Phone",
+      "msj": "Message"
+    },
+    "mail": "Email",
+    "telefono": "Phone",
+    "ds": "Discord"
+  },
+  "proyectos-seccion": {
+    "proyectos-titulo": "Featured Projects",
+    "hospital": {
+      "titulo": "Hospital Website",
+      "desc": "Web platform for San Pablo Hospital - Tucumán, allowing visitors to view medical news, staff schedules, and contact details. It includes an admin panel for user management and document uploads targeted to internal personnel.",
+      "ver": "View Project"
+    },
+    "tienda": {
+      "titulo": "Product Store",
+      "desc": "Online store built with Angular 17, consuming an API to display and detail products. It includes a contact form with validators and a shopping cart that stores data using local state (in development).",
+      "ver": "View Project"
+    },
+    "ocaranza-software": {
+      "titulo": "Ocaranza Mechanics Software",
+      "desc": "Custom-made application for a client aiming to digitize their auto repair shop. Stores customer data in a database, generates PDF records, and supports creating, saving, and printing estimates, calculating labor and part costs.",
+      "ver": "View Project"
+    },
+    "consultorio-dentista": {
+      "titulo": "Dental Clinic",
+      "desc": "Web application for a dental clinic built with React and Vite. Includes a full CRUD system to manage appointments and patients. Designed to be intuitive and desktop-optimized.",
+      "ver": "View Project"
+    },
+    "tienda-ropa": {
+      "titulo": "Clothing Store",
+      "desc": "Clothing e-commerce site developed with React and Vite. Features a full CRUD for product management (add, edit, delete). The UI is modern and responsive across devices.",
+      "ver": "View Project"
+    },
+    "biblioteca-escolar": {
+      "titulo": "School Library",
+      "desc": "Library management system with full CRUD functionality. Allows for book, user, and loan management with due dates. Ideal for tracking inventory and circulation.",
+      "ver": "View Project"
+    }
+  }
 }

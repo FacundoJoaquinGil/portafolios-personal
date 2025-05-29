@@ -15,7 +15,7 @@
   position: fixed; 
   top: 0;
   right: 0;
-  margin-top: 10px;
+  margin-top: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,11 +80,11 @@
   padding: 5px;
   transition: 300ms;
   background-color: #2a2f3b;
-  width: 100px;
+  width: 110px;
   font-size: 15px;
 }
 .option:hover {
-  background-color: #323741;
+  background-color: #4d5462;
 }
 
 .options input[type="radio"] {

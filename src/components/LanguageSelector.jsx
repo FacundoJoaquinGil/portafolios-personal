@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const LanguageSelector = () => {
   const { i18n } = useTranslation();
-  const [selectedLang, setSelectedLang] = useState("es");
+  const [selectedLang, setSelectedLang] = useState(i18n.language);
 
   const handleChange = (lng) => {
     i18n.changeLanguage(lng);
@@ -17,7 +17,7 @@ export const LanguageSelector = () => {
         className="selected"
         data-default="ᴇs Español"
         data-one="ᴇs Español"
-        data-two="ᴇɴ English"
+        data-two="ɢʙ English"
         data-three="ʙʀ Português"
       >
         <svg
@@ -31,7 +31,7 @@ export const LanguageSelector = () => {
       </div>
 
       <div className="options">
-        <div title="option-1">
+        <div title="ᴇs Español">
           <input
             id="option-1"
             name="option"
@@ -46,7 +46,7 @@ export const LanguageSelector = () => {
             onClick={() => handleChange("es")}
           />
         </div>
-        <div title="option-2">
+        <div title="ɢʙ English">
           <input
             id="option-2"
             name="option"
@@ -61,7 +61,7 @@ export const LanguageSelector = () => {
             onClick={() => handleChange("en")}
           />
         </div>
-        <div title="option-3">
+        <div title="ʙʀ Português">
           <input
             id="option-3"
             name="option"

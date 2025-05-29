@@ -16,7 +16,7 @@ export const Home = () => {
   const handleDownload = async () => {
     try {
       Swal.fire({
-        title: "Preparando descarga...",
+         title: t("home.preparando"), 
         toast: true,
         position: "top-end",
         icon: "info",
@@ -43,7 +43,7 @@ export const Home = () => {
       document.body.removeChild(link);
 
       Swal.fire({
-        title: "Descarga iniciada",
+        title: t("home.descargando"),
         toast: true,
         position: "top-end",
         icon: "success",
@@ -55,7 +55,7 @@ export const Home = () => {
       console.error("Error descargando el CV:", error);
 
       Swal.fire({
-        title: "Error al descargar",
+        title: t("home.descargando"),
         text: "Hubo un problema al descargar el archivo. Por favor, intenta de nuevo.",
         icon: "error",
         confirmButtonText: "Entendido",

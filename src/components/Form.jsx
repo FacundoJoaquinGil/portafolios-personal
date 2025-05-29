@@ -23,7 +23,7 @@ export const Form = () => {
     }
 
     Swal.fire({
-      title: "Enviando Mensaje...",
+      title: t("contactos-seccion.alerta.enviando"),
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
@@ -47,8 +47,8 @@ export const Form = () => {
       .then(
         () => {
           Swal.fire({
-            title: "Enviado!",
-            text: "Tu mensaje se envió correctamente :)",
+            title: t("contactos-seccion.alerta.enviado"),
+            text: t("contactos-seccion.alerta.enviado-desc"),
             icon: "success",
           });
           console.log("SUCCESS!");
@@ -57,8 +57,8 @@ export const Form = () => {
         () => {
           Swal.fire({
             icon: "error",
-            title: "Error!",
-            text: "Se ha producido un error inesperado :("
+            title: t("contactos-seccion.alerta.error"),
+            text: t("contactos-seccion.alerta.error-desc")
           });
           console.log("FAILED...");
         }
