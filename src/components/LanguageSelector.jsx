@@ -6,14 +6,17 @@ export const LanguageSelector = () => {
   const [selectedLang, setSelectedLang] = useState(null);
 
   useEffect(() => {
-    setSelectedLang(i18n.language);
-  }, [i18n.language]);
+    if (i18n.resolvedLanguage) {
+      setSelectedLang(i18n.resolvedLanguage);
+    }
+  }, [i18n.resolvedLanguage]);
 
   const handleChange = (lng) => {
     i18n.changeLanguage(lng);
+    setSelectedLang(lng);
   };
 
-  if (!selectedLang) return null;
+  if (!selectedLang) return null; // Evita renderizar mientras no haya idioma
 
   return (
     <div className="select">
@@ -35,26 +38,36 @@ export const LanguageSelector = () => {
       </div>
 
       <div className="options">
-        {[
-          { code: "es", label: "ᴇs Español" },
-          { code: "en", label: "ɢʙ English" },
-          { code: "pt", label: "ʙʀ Português" },
-        ].map(({ code, label }, idx) => (
-          <div title={label} key={code}>
-            <input
-              id={`option-${idx + 1}`}
-              name="option"
-              type="radio"
-              checked={selectedLang === code}
-              onChange={() => handleChange(code)}
-            />
-            <label
-              className="option"
-              htmlFor={`option-${idx + 1}`}
-              data-txt={label}
-            />
-          </div>
-        ))}
+        <div title="ᴇs Español">
+          <input
+            id="option-1"
+            name="option"
+            type="radio"
+            checked={selectedLang === "es"}
+            onChange={() => handleChange("es")}
+          />
+          <label className="option" htmlFor="option-1" data-txt="ᴇs Español" />
+        </div>
+        <div title="ɢʙ English">
+          <input
+            id="option-2"
+            name="option"
+            type="radio"
+            checked={selectedLang === "en"}
+            onChange={() => handleChange("en")}
+          />
+          <label className="option" htmlFor="option-2" data-txt="ᴇɴ English" />
+        </div>
+        <div title="ʙʀ Português">
+          <input
+            id="option-3"
+            name="option"
+            type="radio"
+            checked={selectedLang === "pt"}
+            onChange={() => handleChange("pt")}
+          />
+          <label className="option" htmlFor="option-3" data-txt="ʙʀ Português" />
+        </div>
       </div>
     </div>
   );
