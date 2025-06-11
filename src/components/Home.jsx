@@ -5,9 +5,23 @@ import flecha from "../assets/flecha.png";
 import download from "../assets/download.png";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
+import { ScrollIndicator } from "./ScrollIndicator";
+import { useState, useEffect } from "react";
 
 export const Home = () => {
   const { t } = useTranslation();
+  const [isAnimating, setIsAnimating] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(false);
+      setTimeout(() => {
+        setIsAnimating(true);
+      }, 50);
+    }, 5000); 
+
+    return () => clearInterval(interval);
+  }, []);
 
   const mostrarCurriculum = () => {
     window.open("/cv.pdf", "_blank", "noopener,noreferrer");
@@ -70,7 +84,7 @@ export const Home = () => {
           <div className="contenedor-titulos">
             <h1 id="titulo">Facundo Joaquin Gil</h1>
             <h3 id="subtitulo">{t("home.subtitulo")}</h3>
-            <span id="saludo">{t("home.saludo")}</span>
+            <span id="saludo" className={isAnimating ? 'typing-animation' : ''}>{t("home.saludo")}</span>
           </div>
 
           <div className="contenedor-perfil">
@@ -104,6 +118,10 @@ export const Home = () => {
             <button className="contenedor-download" onClick={handleDownload}>
               <img id="img-download" src={download} alt="Descargar CV" />
             </button>
+          </div>
+
+          <div className="home">
+            <ScrollIndicator />
           </div>
         </div>
       </div>

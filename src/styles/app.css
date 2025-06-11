@@ -129,7 +129,7 @@
     width: 100%;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -159,7 +159,7 @@
 
 #links a:hover {
     color: #E73C37;
-    background-color: #221f2687;
+    background-color: #221f2642;
     border-radius: 5px;
 }
 
@@ -337,9 +337,12 @@
     font-size: 2em;
     margin-top: 20px;
     letter-spacing: 0.02em;
+    overflow: hidden;
+}
+
+.typing-animation {
     animation: typing 1.5s steps(20),
         blink .5s infinite step-end alternate;
-    overflow: hidden;
 }
 
 @keyframes typing {
@@ -1072,7 +1075,7 @@
     border-top: 20px solid #000;
     overflow: hidden;
     padding-bottom: 65%;
-    background-image: url('./assets/banner.png');
+    background-image: url('../assets/banner.png');
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
