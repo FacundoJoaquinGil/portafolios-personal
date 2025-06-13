@@ -24,7 +24,7 @@ export const Home = () => {
   }, []);
 
   const mostrarCurriculum = () => {
-    window.open("/cv.pdf", "_blank", "noopener,noreferrer");
+    window.open(t("curriculum.cv"), "_blank", "noopener,noreferrer");
   };
 
   const handleDownload = async () => {
@@ -44,14 +44,14 @@ export const Home = () => {
         },
       });
 
-      const response = await fetch("/cv.pdf");
+      const response = await fetch(t("curriculum.cv"));
       if (!response.ok) {
         throw new Error("No se pudo acceder al archivo");
       }
 
       const link = document.createElement("a");
-      link.href = "/cv.pdf";
-      link.download = "CV_Joaquin_Gil.pdf";
+      link.href = t("curriculum.cv");
+      link.download = t("curriculum.nombre");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

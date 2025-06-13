@@ -70,5 +70,9 @@
       "desc": "Library management system with full CRUD functionality. Allows for book, user, and loan management with due dates. Ideal for tracking inventory and circulation.",
       "ver": "View Project"
     }
+  },
+  "curriculum":{
+    "nombre": "Resume_Joaquin_Gil",
+    "cv": "../curriculums/Resume-Joaquin-Gil.pdf"
   }
 }

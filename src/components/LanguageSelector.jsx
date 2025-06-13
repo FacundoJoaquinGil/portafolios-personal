@@ -16,7 +16,7 @@ export const LanguageSelector = () => {
     setSelectedLang(lng);
   };
 
-  if (!selectedLang) return null; // Evita renderizar mientras no haya idioma
+  if (!selectedLang) return null; 
 
   return (
     <div className="select">
@@ -24,8 +24,8 @@ export const LanguageSelector = () => {
         className="selected"
         data-default="ᴇs Español"
         data-one="ᴇs Español"
-        data-two="ɢʙ English"
-        data-three="ʙʀ Português"
+        data-two="ᴇɴ English"
+        data-three="ᴘᴛ Português"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export const LanguageSelector = () => {
           />
           <label className="option" htmlFor="option-1" data-txt="ᴇs Español" />
         </div>
-        <div title="ɢʙ English">
+        <div title="ᴇɴ English">
           <input
             id="option-2"
             name="option"
@@ -58,7 +58,7 @@ export const LanguageSelector = () => {
           />
           <label className="option" htmlFor="option-2" data-txt="ᴇɴ English" />
         </div>
-        <div title="ʙʀ Português">
+        <div title="ᴘᴛ Português">
           <input
             id="option-3"
             name="option"
@@ -66,7 +66,7 @@ export const LanguageSelector = () => {
             checked={selectedLang === "pt"}
             onChange={() => handleChange("pt")}
           />
-          <label className="option" htmlFor="option-3" data-txt="ʙʀ Português" />
+          <label className="option" htmlFor="option-3" data-txt="ᴘᴛ Português" />
         </div>
       </div>
     </div>

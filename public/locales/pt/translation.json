@@ -70,5 +70,9 @@
       "desc": "Sistema completo de gerenciamento de biblioteca escolar com funcionalidades CRUD. Permite adicionar, editar e remover livros, gerenciar usuários e empréstimos com prazos. Ideal para controle de acervo e transações.",
       "ver": "Ver Projeto"
     }
+  },
+  "curriculum":{
+    "nombre": "Curriculo_Joaquin_Gil",
+    "cv": "../curriculums/Curriculo-Joaquin-Gil.pdf"
   }
 }
