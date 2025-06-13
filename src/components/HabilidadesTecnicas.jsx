@@ -18,6 +18,7 @@ import firebase from "../assets/firebase.png";
 import tsc from "../assets/tsc.png";
 import angular from "../assets/angular.png";
 import { useTranslation } from "react-i18next";
+import { VerTodasTecnologias } from "./VerTodasTecnologias";
 
 export const HabilidadesTecnicas = () => {
 
@@ -91,6 +92,11 @@ export const HabilidadesTecnicas = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          
+        </div>
+        
+        <div className="text-center">
+            <VerTodasTecnologias />
         </div>
       </div>
     </>

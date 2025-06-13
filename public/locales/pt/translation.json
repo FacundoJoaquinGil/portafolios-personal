@@ -1,11 +1,15 @@
 {
   "home": {
-    "subtitulo": "Desenvolvedor Fullstack",
+    "subtitulo": "Programador Fullstack",
     "saludo": "console.log('Olá Mundo!')",
     "cv": "Ver Currículo",
     "preparando": "Preparando download...",
     "descargando": "Download iniciado",
-    "error": "Erro no download"
+    "error": "Erro ao baixar"
+  },
+  "curriculum": {
+    "nombre": "Curriculo_Joaquin_Gil",
+    "cv": "../curriculums/Curriculo-Joaquin-Gil.pdf"
   },
   "nav": {
     "sobre-mi": "Sobre Mim",
@@ -15,10 +19,12 @@
   },
   "sobre-mi-seccion": {
     "sobre-Mi-Titulo": "Sobre Mim",
-    "desc": "Autodidata, curioso e responsável, com sólida formação como Técnico Universitário em Programação pela Universidade Tecnológica Nacional. Tenho 25 anos, moro em Tucumán, Argentina, e sou apaixonado por aprendizado contínuo e pela criação de soluções tecnológicas eficazes. Estou totalmente disponível para assumir novos desafios e contribuir com dedicação e experiência."
+    "desc": "Autodidata, curioso e responsável, com uma formação sólida como Técnico Universitário em Programação pela Universidade Tecnológica Nacional. Aos 25 anos, moro em Tucumán, Argentina, e sou apaixonado por aprendizado contínuo e pela criação de soluções tecnológicas eficazes. Estou totalmente disponível para assumir novos desafios profissionais e contribuir com minha experiência e dedicação."
   },
   "tecnologias-seccion": {
-    "tecnologias-titulo": "Tecnologias"
+    "tecnologias-titulo": "Tecnologias",
+    "modal-titulo": "Todas as tecnologias",
+    "boton": "Expandir lista"
   },
   "contactos-seccion": {
     "alerta": {
@@ -42,37 +48,33 @@
     "proyectos-titulo": "Projetos em Destaque",
     "hospital": {
       "titulo": "Site do Hospital",
-      "desc": "Plataforma web para o Hospital San Pablo - Tucumán. Permite aos visitantes acessar notícias médicas, horários e informações do pessoal. Possui painel administrativo para gerenciar usuários e enviar documentos internos.",
+      "desc": "Plataforma web para o Hospital de San Pablo-Tucumán que permite aos visitantes se informarem sobre notícias médicas, consultar a equipe disponível e seus horários. Conta com um painel administrativo onde os administradores podem gerenciar e criar usuários, além de fazer upload de documentos destinados à equipe do hospital.",
       "ver": "Ver Projeto"
     },
     "tienda": {
       "titulo": "Loja de Produtos",
-      "desc": "Loja online desenvolvida com Angular 17, consumindo uma API para listar e detalhar produtos. Inclui formulário de contato com validadores e um carrinho de compras que armazena dados localmente (em desenvolvimento).",
+      "desc": "Loja de produtos criada com Angular 17 (atualmente) que consome uma API para listar e visualizar detalhes dos itens. Inclui um formulário de contato com validadores, oferecendo uma experiência dinâmica e interativa. Também possui um carrinho de compras que armazena os dados em um estado local (em desenvolvimento).",
       "ver": "Ver Projeto"
     },
     "ocaranza-software": {
       "titulo": "Ocaranza Mec. Software",
-      "desc": "Aplicação personalizada para um cliente que desejava digitalizar sua oficina. Armazena dados de clientes em banco de dados, gera PDFs, cria e imprime orçamentos e calcula automaticamente custos de peças e mão de obra.",
+      "desc": "Aplicativo desenvolvido sob medida para um cliente que desejava profissionalizar sua oficina mecânica. Armazena todas as informações dos clientes em um banco de dados, com a possibilidade de gerar arquivos PDF dos registros. Também permite criar orçamentos, salvá-los ou imprimi-los, e calcula automaticamente os custos de peças e mão de obra.",
       "ver": "Ver Projeto"
     },
     "consultorio-dentista": {
       "titulo": "Consultório Odontológico",
-      "desc": "Site para consultório odontológico desenvolvido com React e Vite. Contém sistema CRUD para gerenciar consultas e pacientes. Design moderno e otimizado para desktop.",
+      "desc": "Site para um consultório odontológico desenvolvido com React e Vite. Inclui um sistema CRUD para gerenciar consultas e pacientes. Seu design é moderno, intuitivo e otimizado para uma experiência em desktop.",
       "ver": "Ver Projeto"
     },
     "tienda-ropa": {
       "titulo": "Loja de Roupas",
-      "desc": "E-commerce de roupas desenvolvido com React e Vite. CRUD completo para gerenciar produtos. Interface moderna e responsiva para todos os dispositivos.",
+      "desc": "E-commerce de roupas desenvolvido com React e Vite. Inclui um sistema CRUD para que os administradores gerenciem os produtos, podendo adicionar, excluir ou editar itens. A interface é moderna e otimizada para dispositivos móveis e desktop.",
       "ver": "Ver Projeto"
     },
     "biblioteca-escolar": {
       "titulo": "Biblioteca Escolar",
-      "desc": "Sistema completo de gerenciamento de biblioteca escolar com funcionalidades CRUD. Permite adicionar, editar e remover livros, gerenciar usuários e empréstimos com prazos. Ideal para controle de acervo e transações.",
+      "desc": "Sistema de gestão de biblioteca escolar com CRUD completo. Permite adicionar, editar ou excluir livros, gerenciar usuários e realizar empréstimos com prazos definidos. Ideal para o controle de inventário e registros de empréstimos.",
       "ver": "Ver Projeto"
     }
-  },
-  "curriculum":{
-    "nombre": "Curriculo_Joaquin_Gil",
-    "cv": "../curriculums/Curriculo-Joaquin-Gil.pdf"
   }
 }

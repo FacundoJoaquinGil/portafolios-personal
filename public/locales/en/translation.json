@@ -2,10 +2,14 @@
   "home": {
     "subtitulo": "Fullstack Developer",
     "saludo": "console.log('Hello World!')",
-    "cv": "View Résumé",
+    "cv": "View Resume",
     "preparando": "Preparing download...",
     "descargando": "Download started",
     "error": "Download error"
+  },
+  "curriculum":{
+    "nombre": "Resume_Joaquin_Gil",
+    "cv": "../curriculums/Resume-Joaquin-Gil.pdf"
   },
   "nav": {
     "sobre-mi": "About Me",
@@ -18,8 +22,10 @@
     "desc": "Self-taught, curious, and responsible developer with a strong academic background as a University Technician in Programming from the National Technological University. I’m 25 years old, based in Tucumán, Argentina, passionate about continuous learning and building effective tech solutions. Fully available to take on new challenges and contribute with dedication and experience."
   },
   "tecnologias-seccion": {
-    "tecnologias-titulo": "Technologies"
-  },
+  "tecnologias-titulo": "Technologies",
+  "modal-titulo": "All Technologies",
+  "boton": "Expand List"
+},
   "contactos-seccion": {
     "alerta": {
       "enviando": "Sending message...",
@@ -31,7 +37,7 @@
     "form": {
       "contactos": "Contacts",
       "nombre": "Name",
-      "mail": "Email or Phone",
+      "mail": "Email or phone number",
       "msj": "Message"
     },
     "mail": "Email",
@@ -47,7 +53,7 @@
     },
     "tienda": {
       "titulo": "Product Store",
-      "desc": "Online store built with Angular 17, consuming an API to display and detail products. It includes a contact form with validators and a shopping cart that stores data using local state (in development).",
+      "desc": "Online store built with Angular 17, consuming an API to display and detail products. It includes a contact form with validators and a shopping cart that stores data using local state (currently in development)",
       "ver": "View Project"
     },
     "ocaranza-software": {
@@ -57,7 +63,7 @@
     },
     "consultorio-dentista": {
       "titulo": "Dental Clinic",
-      "desc": "Web application for a dental clinic built with React and Vite. Includes a full CRUD system to manage appointments and patients. Designed to be intuitive and desktop-optimized.",
+      "desc": "Web application for a dental clinic built with React and Vite. Includes a full CRUD system to manage appointments and patients. Designed to be intuitive and optimized for desktop",
       "ver": "View Project"
     },
     "tienda-ropa": {
@@ -70,9 +76,5 @@
       "desc": "Library management system with full CRUD functionality. Allows for book, user, and loan management with due dates. Ideal for tracking inventory and circulation.",
       "ver": "View Project"
     }
-  },
-  "curriculum":{
-    "nombre": "Resume_Joaquin_Gil",
-    "cv": "../curriculums/Resume-Joaquin-Gil.pdf"
   }
 }

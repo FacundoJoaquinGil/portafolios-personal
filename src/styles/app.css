@@ -371,7 +371,7 @@
 #perfil-img {
     height: 350px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 50%;
     margin-left: 30px;
     margin-bottom: 20px;
 }
@@ -1224,7 +1224,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
+    margin: 25px;
 }
 
 

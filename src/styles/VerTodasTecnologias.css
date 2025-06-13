@@ -1,0 +1,66 @@
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #E73C37;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c42e29;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swal-custom-popup {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.397);
+    background-color: #221f26 !important;
+    border-radius: 10px !important;
+}
+
+.swal2-title {
+    color: white !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Estilos para la cuadrícula de tecnologías */
+.skill-item {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.12);
+    
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover img {
+    transform: scale(1.1);
+}
+
+.skill-item span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+} 

@@ -7,6 +7,10 @@
     "descargando": "Descarga iniciada",
     "error": "Error al descargar"
   },
+  "curriculum":{
+    "nombre": "Curriculum_Joaquin_Gil",
+    "cv": "../curriculums/Curriculum-Joaquin-Gil.pdf"
+  } ,
   "nav": {
     "sobre-mi": "Sobre Mí",
     "proyectos": "Proyectos",
@@ -18,7 +22,9 @@
     "desc": "Autodidacta, curioso y responsable, con una sólida formación como Técnico Universitario en Programación por la Universidad Tecnológica Nacional. A mis 25 años, resido en Tucumán, Argentina, y me apasiona el aprendizaje continuo y la creación de soluciones tecnológicas efectivas. Estoy plenamente disponible para asumir nuevos desafíos laborales y contribuir con mi experiencia y dedicación."
   },
   "tecnologias-seccion": {
-    "tecnologias-titulo": "Tecnologías"
+    "tecnologias-titulo": "Tecnologías",
+    "modal-titulo": "Todas las tecnologias",
+    "boton": "Ampliar lista"
   },
   "contactos-seccion": {
     "alerta": {
@@ -70,9 +76,5 @@
       "desc": "Sistema de gestión de biblioteca escolar con CRUD completo. Permite agregar, editar o eliminar libros, gestionar usuarios y realizar préstamos con fechas límite. Ideal para el control de inventario y registros de préstamos.",
       "ver": "Ver Proyecto"
     }
-  },
-  "curriculum":{
-    "nombre": "Curriculum_Joaquin_Gil",
-    "cv": "../curriculums/Curriculum-Joaquin-Gil.pdf"
   }
 }

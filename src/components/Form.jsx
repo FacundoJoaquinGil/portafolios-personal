@@ -1,6 +1,5 @@
 import mail from "../assets/mail.png";
 import telefono from "../assets/telefono.png";
-import discord from "../assets/discord.png";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
@@ -120,17 +119,6 @@ export const Form = () => {
               <div className="desc-contacto">
                 <h4 id="titulo-desc-contacto">{t("contactos-seccion.telefono")}</h4>
                 <p id="parrafo-desc-contacto">+54 3816566750</p>
-              </div>
-            </div>
-
-            <div className="fila">
-              <div className="img-desc-contacto">
-                <img src={discord} alt="" />
-              </div>
-
-              <div className="desc-contacto">
-                <h4 id="titulo-desc-contacto">{t("contactos-seccion.ds")}</h4>
-                <p id="parrafo-desc-contacto">fac.joaquin</p>
               </div>
             </div>
           </div>
