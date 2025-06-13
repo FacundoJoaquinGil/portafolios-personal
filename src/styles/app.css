@@ -844,6 +844,7 @@
 
 
 .contenedor-cards {
+    min-height: 600px;
     margin: 20px;
     user-select: none;
     width: 340px;

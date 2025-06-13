@@ -49,32 +49,32 @@
     "hospital": {
       "titulo": "Site do Hospital",
       "desc": "Plataforma web para o Hospital de San Pablo-Tucumán que permite aos visitantes se informarem sobre notícias médicas, consultar a equipe disponível e seus horários. Conta com um painel administrativo onde os administradores podem gerenciar e criar usuários, além de fazer upload de documentos destinados à equipe do hospital.",
-      "ver": "Ver Projeto"
+      "ver": "Ver Repositório"
     },
     "tienda": {
       "titulo": "Loja de Produtos",
       "desc": "Loja de produtos criada com Angular 17 (atualmente) que consome uma API para listar e visualizar detalhes dos itens. Inclui um formulário de contato com validadores, oferecendo uma experiência dinâmica e interativa. Também possui um carrinho de compras que armazena os dados em um estado local (em desenvolvimento).",
-      "ver": "Ver Projeto"
+      "ver": "Ver Repositório"
     },
     "ocaranza-software": {
       "titulo": "Ocaranza Mec. Software",
       "desc": "Aplicativo desenvolvido sob medida para um cliente que desejava profissionalizar sua oficina mecânica. Armazena todas as informações dos clientes em um banco de dados, com a possibilidade de gerar arquivos PDF dos registros. Também permite criar orçamentos, salvá-los ou imprimi-los, e calcula automaticamente os custos de peças e mão de obra.",
-      "ver": "Ver Projeto"
+      "ver": "Ver Repositório"
     },
     "consultorio-dentista": {
       "titulo": "Consultório Odontológico",
       "desc": "Site para um consultório odontológico desenvolvido com React e Vite. Inclui um sistema CRUD para gerenciar consultas e pacientes. Seu design é moderno, intuitivo e otimizado para uma experiência em desktop.",
-      "ver": "Ver Projeto"
+      "ver": "Ver Repositório"
     },
     "tienda-ropa": {
       "titulo": "Loja de Roupas",
       "desc": "E-commerce de roupas desenvolvido com React e Vite. Inclui um sistema CRUD para que os administradores gerenciem os produtos, podendo adicionar, excluir ou editar itens. A interface é moderna e otimizada para dispositivos móveis e desktop.",
-      "ver": "Ver Projeto"
+      "ver": "Ver Repositório"
     },
     "biblioteca-escolar": {
       "titulo": "Biblioteca Escolar",
       "desc": "Sistema de gestão de biblioteca escolar com CRUD completo. Permite adicionar, editar ou excluir livros, gerenciar usuários e realizar empréstimos com prazos definidos. Ideal para o controle de inventário e registros de empréstimos.",
-      "ver": "Ver Projeto"
+      "ver": "Ver Repositório"
     }
   }
 }

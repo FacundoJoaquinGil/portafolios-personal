@@ -49,32 +49,32 @@
     "hospital": {
       "titulo": "Hospital Website",
       "desc": "Web platform for San Pablo Hospital - Tucumán, allowing visitors to view medical news, staff schedules, and contact details. It includes an admin panel for user management and document uploads targeted to internal personnel.",
-      "ver": "View Project"
+      "ver": "View Repository"
     },
     "tienda": {
       "titulo": "Product Store",
       "desc": "Online store built with Angular 17, consuming an API to display and detail products. It includes a contact form with validators and a shopping cart that stores data using local state (currently in development)",
-      "ver": "View Project"
+      "ver": "View Repository"
     },
     "ocaranza-software": {
       "titulo": "Ocaranza Mechanics Software",
       "desc": "Custom-made application for a client aiming to digitize their auto repair shop. Stores customer data in a database, generates PDF records, and supports creating, saving, and printing estimates, calculating labor and part costs.",
-      "ver": "View Project"
+      "ver": "View Repository"
     },
     "consultorio-dentista": {
       "titulo": "Dental Clinic",
       "desc": "Web application for a dental clinic built with React and Vite. Includes a full CRUD system to manage appointments and patients. Designed to be intuitive and optimized for desktop",
-      "ver": "View Project"
+      "ver": "View Repository"
     },
     "tienda-ropa": {
       "titulo": "Clothing Store",
       "desc": "Clothing e-commerce site developed with React and Vite. Features a full CRUD for product management (add, edit, delete). The UI is modern and responsive across devices.",
-      "ver": "View Project"
+      "ver": "View Repository"
     },
     "biblioteca-escolar": {
       "titulo": "School Library",
       "desc": "Library management system with full CRUD functionality. Allows for book, user, and loan management with due dates. Ideal for tracking inventory and circulation.",
-      "ver": "View Project"
+      "ver": "View Repository"
     }
   }
 }

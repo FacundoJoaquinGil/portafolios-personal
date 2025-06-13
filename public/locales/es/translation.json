@@ -41,40 +41,39 @@
       "msj": "Mensaje"
     },
     "mail": "Email",
-    "telefono": "Teléfono",
-    "ds": "Discord"
+    "telefono": "Teléfono"
   },
   "proyectos-seccion": {
     "proyectos-titulo": "Proyectos Destacables",
     "hospital": {
       "titulo": "Página Web Hospital",
       "desc": "Plataforma web para el Hospital de San Pablo-Tucumán que permite a los visitantes informarse sobre noticias médicas, consultar el personal disponible y sus horarios. Cuenta con un panel de administración donde los administradores pueden gestionar y crear usuarios, y subir documentación destinada al personal del hospital.",
-      "ver": "Ver Proyecto"
+      "ver": "Ver Repositorio"
     },
     "tienda": {
       "titulo": "Tienda de Productos",
       "desc": "Tienda de productos creada con Angular 17 (actualmente) que consume una API para listar y visualizar detalles de artículos. Incluye un formulario de contacto con validadores, ofreciendo una experiencia dinámica e interactiva. Además, cuenta con un carrito de compras que guarda los datos dentro de un estado local (en desarrollo).",
-      "ver": "Ver Proyecto"
+      "ver": "Ver Repositorio"
     },
     "ocaranza-software": {
       "titulo": "Ocaranza Mec. Software",
       "desc": "Aplicación diseñada a medida para un cliente que deseaba profesionalizar su taller mecánico. Guarda en una base de datos toda la información de sus clientes, con la posibilidad de generar archivos PDF de los registros. También permite generar presupuestos, guardarlos o imprimirlos y calcula automáticamente los costos de repuestos y mano de obra.",
-      "ver": "Ver Proyecto"
+      "ver": "Ver Repositorio"
     },
     "consultorio-dentista": {
       "titulo": "Consultorio Dentista",
       "desc": "Página web para un consultorio dental desarrollada con React y Vite. Incluye un sistema CRUD para gestionar turnos y pacientes. Su diseño es moderno, intuitivo y optimizado para una experiencia en escritorio.",
-      "ver": "Ver Proyecto"
+      "ver": "Ver Repositorio"
     },
     "tienda-ropa": {
       "titulo": "Tienda de Ropa",
       "desc": "E-commerce de ropa desarrollado con React y Vite. Incluye un sistema CRUD para que los administradores gestionen productos, permitiendo agregar, eliminar o editar artículos. La interfaz es moderna y está optimizada para dispositivos móviles y escritorio.",
-      "ver": "Ver Proyecto"
+      "ver": "Ver Repositorio"
     },
     "biblioteca-escolar": {
       "titulo": "Biblioteca Escolar",
       "desc": "Sistema de gestión de biblioteca escolar con CRUD completo. Permite agregar, editar o eliminar libros, gestionar usuarios y realizar préstamos con fechas límite. Ideal para el control de inventario y registros de préstamos.",
-      "ver": "Ver Proyecto"
+      "ver": "Ver Repositorio"
     }
   }
 }
