@@ -22,10 +22,10 @@ export const LanguageSelector = () => {
     <div className="select">
       <div
         className="selected"
-        data-default="ᴇs Español"
-        data-one="ᴇs Español"
-        data-two="ᴇɴ English"
-        data-three="ᴘᴛ Português"
+        data-default="Español"
+        data-one="Español"
+        data-two="English"
+        data-three="Português"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export const LanguageSelector = () => {
       </div>
 
       <div className="options">
-        <div title="ᴇs Español">
+        <div title="Español">
           <input
             id="option-1"
             name="option"
@@ -46,9 +46,9 @@ export const LanguageSelector = () => {
             checked={selectedLang === "es"}
             onChange={() => handleChange("es")}
           />
-          <label className="option" htmlFor="option-1" data-txt="ᴇs Español" />
+          <label className="option" htmlFor="option-1" data-txt="Español" />
         </div>
-        <div title="ᴇɴ English">
+        <div title="English">
           <input
             id="option-2"
             name="option"
@@ -56,9 +56,9 @@ export const LanguageSelector = () => {
             checked={selectedLang === "en"}
             onChange={() => handleChange("en")}
           />
-          <label className="option" htmlFor="option-2" data-txt="ᴇɴ English" />
+          <label className="option" htmlFor="option-2" data-txt="English" />
         </div>
-        <div title="ᴘᴛ Português">
+        <div title="Português">
           <input
             id="option-3"
             name="option"
@@ -66,7 +66,7 @@ export const LanguageSelector = () => {
             checked={selectedLang === "pt"}
             onChange={() => handleChange("pt")}
           />
-          <label className="option" htmlFor="option-3" data-txt="ᴘᴛ Português" />
+          <label className="option" htmlFor="option-3" data-txt="Português" />
         </div>
       </div>
     </div>

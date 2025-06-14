@@ -25,6 +25,9 @@
     box-shadow: 4px 4px rgba(0, 0, 0, 0.397);
     background-color: #221f26 !important;
     border-radius: 10px !important;
+    width: 90% !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
 }
 
 .swal2-title {
@@ -34,13 +37,24 @@
 }
 
 /* Estilos para la cuadrícula de tecnologías */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
 .skill-item {
     border: 1px solid rgba(255, 255, 255, 0.05);
     background-color: rgba(255, 255, 255, 0.12);
-    
     padding: 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .skill-item:hover {
@@ -63,4 +77,53 @@
     color: white;
     font-size: 14px;
     font-weight: 500;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .swal2-title {
+        font-size: 1.2rem !important;
+    }
+
+    .skill-item {
+        padding: 10px;
+    }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-item span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .swal2-title {
+        font-size: 1rem !important;
+    }
+
+    .skill-item {
+        padding: 8px;
+    }
+
+    .skill-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .skill-item span {
+        font-size: 11px;
+    }
 } 

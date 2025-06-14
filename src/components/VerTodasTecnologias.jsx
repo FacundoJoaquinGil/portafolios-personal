@@ -43,13 +43,13 @@ export const VerTodasTecnologias = () => {
 
   const mostrarTodasTecnologias = () => {
     const skillsHTML = `
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 10px;">
+      <div class="skills-grid">
         ${skills
           .map(
             (skill) => `
-          <div class="skill-item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <img src="${skill.src}" alt="${skill.alt}" style="width: 50px; height: 50px; margin-bottom: 8px;">
-            <span style="font-size: 14px;">${skill.alt}</span>
+          <div class="skill-item">
+            <img src="${skill.src}" alt="${skill.alt}">
+            <span>${skill.alt}</span>
           </div>
         `
           )
@@ -60,12 +60,12 @@ export const VerTodasTecnologias = () => {
     Swal.fire({
       title: t("tecnologias-seccion.modal-titulo"),
       html: skillsHTML,
-      width: "800px",
       showCloseButton: true,
       showConfirmButton: false,
       customClass: {
         popup: "swal-custom-popup",
       },
+      width: "auto",
     });
   };
 
