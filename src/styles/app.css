@@ -820,8 +820,6 @@
 
 
 .contenedor-cards {
-    min-height: 600px;
-    height: 600px;
     margin: 20px;
     user-select: none;
     width: 340px;
@@ -830,9 +828,6 @@
     border-radius: .7rem;
     overflow: hidden;
     transition: .5s all;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 
     hr {
         width: 100%;
@@ -843,46 +838,33 @@
 
     .carta {
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 0 auto;
-        text-align: center;
         flex-direction: column;
-        padding: 7px;
-        flex: 1;
-        height: 100%;
+        padding: 10px;
+        text-align: center;
 
         .portada-card {
             border-radius: .5rem;
-            width: 100%;
+            max-width: 100%;
             height: 200px;
             object-fit: cover;
         }
 
         .descripcion-cart {
             padding: .5rem 0;
+            margin-bottom: 70px;
             color: #a89ec9;
-            height: 120px;
-            margin: 10px 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;
-            line-height: 1.4;
+            height: 160px;
         }
 
         .contenedor-lenguajes {
             display: flex;
             margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 5px;
-            padding: 0 10px;
 
             .lenguajes-utilizados {
                 margin: 0;
+                margin-right: .5rem;
                 border-radius: 5%;
+
                 background-color: #6d58f2;
                 box-shadow: 3px 3px #0000006d;
 
@@ -891,6 +873,7 @@
                     width: 40px;
                     height: 40px;
                     filter: brightness(0) invert(1);
+
                 }
             }
         }
@@ -915,15 +898,6 @@
             left: 200%;
         }
     }
-}
-
-.contenedor-code {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: auto;
 }
 
 .contenedor-link {
@@ -967,20 +941,17 @@
 
 
 #titulo-card-proyectos {
-    margin-top: 7px;
+    min-height: 70px;
     color: white;
     padding-top: 10px;
-    height: 60px;
+}
+
+.contenedor-code {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    align-items: center;
+    padding: 10px;
 }
 
 .contenedor-code a {
@@ -1059,9 +1030,6 @@
 .contenedor-ver-mas-proyectos:hover #mas {
     filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.505));
 }
-
-
-
 
 /* Contactos */
 

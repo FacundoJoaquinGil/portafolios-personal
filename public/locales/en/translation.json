@@ -48,17 +48,17 @@
     "proyectos-titulo": "Featured Projects",
     "hospital": {
       "titulo": "Hospital Website",
-      "desc": "Web platform for San Pablo Hospital - Tucumán, allowing visitors to view medical news, staff schedules, and contact details. It includes an admin panel for user management and document uploads targeted to internal personnel.",
+      "desc": "Web platform for the Hospital of San Pablo-Tucumán that allows visitors to access medical news, check available staff and their schedules. It includes an admin panel where administrators can manage and create users, as well as upload internal documents intended for hospital personnel",
       "ver": "View Repository"
     },
     "tienda": {
       "titulo": "Product Store",
-      "desc": "Online store built with Angular 17, consuming an API to display and detail products. It includes a contact form with validators and a shopping cart that stores data using local state (currently in development)",
+      "desc": "Product store built with Angular 17 (currently) that consumes an API to list and display item details. It features a contact form with validators, providing a dynamic and interactive experience. Additionally, it includes a shopping cart that stores data in local state (in development)",
       "ver": "View Repository"
     },
     "ocaranza-software": {
       "titulo": "Ocaranza Mechanics Software",
-      "desc": "Custom-made application for a client aiming to digitize their auto repair shop. Stores customer data in a database, generates PDF records, and supports creating, saving, and printing estimates, calculating labor and part costs.",
+      "desc": "Custom-built application for a client seeking to professionalize their auto repair shop. It stores all client information in a database, with the ability to generate PDF files of service records. The system also allows users to create, save, or print estimates, automatically calculating parts and labor costs",
       "ver": "View Repository"
     },
     "consultorio-dentista": {
