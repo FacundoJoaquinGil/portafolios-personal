@@ -12,7 +12,7 @@ import json from "../assets/json.png";
 import ts from "../assets/tsc.png";
 import angular from "../assets/angular.png";
 import CSharp from "../assets/CSharp.png";
-import hosp from "../assets/hospital.jpg";
+import hosp from "../assets/hospital2.jpg";
 import oca from "../assets/oca.png";
 import tiendaAG from "../assets/tienda-angular.jpg";
 import { useTranslation } from "react-i18next";

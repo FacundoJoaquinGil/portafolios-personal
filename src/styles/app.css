@@ -822,7 +822,7 @@
 .contenedor-cards {
     margin: 20px;
     user-select: none;
-    width: 340px;
+    width: 390px;
     background: linear-gradient(20deg, rgb(28, 30, 34) 0%, rgba(17, 0, 32, .5) 100%);
     box-shadow: 6px 6px #0000003f;
     border-radius: .7rem;
