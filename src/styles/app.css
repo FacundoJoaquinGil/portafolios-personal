@@ -1244,3 +1244,17 @@
     }
 
 }
+
+.youtube-video-btn {
+  margin-left: 10px;
+  padding: 9px;
+  background: #e73c37;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.247);
+}
+.youtube-video-btn:hover {
+  background: #ee1616;
+}
