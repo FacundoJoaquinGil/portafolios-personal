@@ -48,7 +48,7 @@
     "proyectos-titulo": "Featured Projects",
     "hospital": {
       "titulo": "Hospital Website",
-      "desc": "Web platform for the Hospital of San Pablo-Tucumán that allows visitors to access medical news, check available staff and their schedules. It includes an admin panel where administrators can manage and create users, as well as upload internal documents intended for hospital personnel",
+      "desc": "I developed a web platform for Hospital San Pablo (Tucumán) that allows visitors to stay informed about medical news, view available staff, and check their consultation hours. The system includes an admin panel to manage users, medical staff, schedules, and internal documentation, all through a role-based access system",
       "ver": "View Repository"
     },
     "tienda": {
