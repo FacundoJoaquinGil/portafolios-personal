@@ -1248,13 +1248,25 @@
 .youtube-video-btn {
   margin-left: 10px;
   padding: 9px;
-  background: #e73c37;
+  background: #e73d37;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  transition: background 0.3s;
   border: 2px solid rgba(0, 0, 0, 0.247);
 }
+
 .youtube-video-btn:hover {
-  background: #ee1616;
+  animation: pulse 0.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
