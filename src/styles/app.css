@@ -1270,3 +1270,34 @@
     transform: scale(1);
   }
 }
+
+/* Mejoras de responsividad para NavBar en móviles */
+@media (max-width: 600px) {
+  .contenedor-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #links {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  #links a {
+    margin: 8px 0 !important;
+    font-size: 16px !important;
+    padding: 10px 0 !important;
+    width: 100vw;
+    text-align: center;
+    border-radius: 0;
+  }
+  .language-selector-wrapper {
+    position: static;
+    margin-top: 10px;
+    margin-right: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}

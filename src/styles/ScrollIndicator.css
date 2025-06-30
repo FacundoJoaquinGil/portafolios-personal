@@ -68,6 +68,28 @@
 }
 
 /* Responsive */
+
+@media (max-width: 768px){
+
+  .scroll-indicator-portfolio {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    left: auto;
+    transform: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .scroll-indicator-portfolio__arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scroll-indicator-portfolio-bounce 2s infinite;
+  }
+}
+
 @media (max-width: 768px) {
   .scroll-indicator-portfolio {
     bottom: 20px;
