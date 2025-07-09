@@ -6,7 +6,7 @@ export const SobreMi = () => {
   return (
     <>
       <div className="contenedor-sm">
-        <div data-aos="fade-up">
+        <div className="bg-sm" data-aos="fade-up">
           <h1 id="sm-titulo">{t("sobre-mi-seccion.sobre-Mi-Titulo")}</h1>
           <div className="contenedor-desc">
             <p id="descripcion-sm">
