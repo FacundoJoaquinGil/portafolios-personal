@@ -36,6 +36,7 @@ export const App = () => {
       <div id="contact">
         <Form />
       </div>
+     
     </>
   );
 };

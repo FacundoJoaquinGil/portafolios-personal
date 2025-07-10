@@ -18,11 +18,7 @@ body{
    /* border-radius: 2px; */
 }
 
-::-webkit-scrollbar-thumb {
-   background-color: rgba(231, 61, 55, 0.437); 
-   /* border-radius: 2px; */
-}
-::-webkit-scrollbar-thumb :hover{
+::-webkit-scrollbar-thumb{
    background-color: rgb(231, 61, 55); 
    /* border-radius: 2px; */
 }
