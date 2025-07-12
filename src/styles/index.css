@@ -1,10 +1,11 @@
 body{
-   background-image: url('../assets/bg2.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   max-height: 100vh;
-   background-color: #221f26;
+   
+   background-color: #020617;
+
+   background-image:
+     linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+     linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+   background-size: 40px 40px; /* Tamaño de los cuadros */
 } 
 
 *{
@@ -14,7 +15,7 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-   background-color: rgba(112, 100, 116, 0.328);
+   background-color: rgba(112, 100, 116, 0.196);
    /* border-radius: 2px; */
 }
 
