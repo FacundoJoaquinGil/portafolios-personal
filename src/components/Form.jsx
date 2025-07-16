@@ -4,6 +4,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
+import send from "../assets/send-message-dm.svg";
 
 export const Form = () => {
   const { t } = useTranslation();
@@ -91,7 +92,9 @@ export const Form = () => {
             </div>
 
             <div className="contenedor-boton">
+              
               <button id="boton-enviar" type="submit" value="Send">
+              <img className="send-msg" src={send} alt="send-msg" />
                 Enviar
               </button>
             </div>

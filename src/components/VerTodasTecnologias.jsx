@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 import "../styles/VerTodasTecnologias.css";
-import flecha from "../assets/flecha.png";
+import expand from "../assets/expand.svg";
 import css from "../assets/css.png";
 import html from "../assets/html.png";
 import js from "../assets/js.png";
@@ -70,9 +70,9 @@ export const VerTodasTecnologias = () => {
   };
 
   return (
-    <button className="contenedor-curriculum" onClick={mostrarTodasTecnologias}>
+    <button className="expand-btn" onClick={mostrarTodasTecnologias}>
+      <img id="expand" src={expand} />
       <span id="curriculum">{t("tecnologias-seccion.boton")}</span>
-      <img id="flecha" src={flecha} />
     </button>
   );
 };

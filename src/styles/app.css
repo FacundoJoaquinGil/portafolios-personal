@@ -34,8 +34,8 @@
 }
 
 .selected {
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background-color: #221f26;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background-color: #020617;
     min-width: 120px;
     padding: 5px;
     margin-bottom: 3px;
@@ -60,11 +60,11 @@
 }
 
 .options {
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    background-color: #221f26;
+    background-color: #020617;
     position: relative;
     top: -100px;
     opacity: 0;
@@ -84,13 +84,13 @@
     border-radius: 5px;
     padding: 5px;
     transition: 300ms;
-    background-color: #221f26;
+    background-color: #020617;
     width: 120px;
     font-size: 15px;
 }
 
 .option:hover {
-    background-color: #706474;
+    background-color: #ffffff11;
 }
 
 .options input[type="radio"] {
@@ -1138,14 +1138,20 @@
     border: 0;
 }
 
+.send-msg{
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
 #boton-enviar:hover {
-    border: 1px solid rgb(255, 255, 255);
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.442);
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.456);
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 #boton-enviar {
-    transition: .25s ease;
+    transition: transform 0.2s;
 }
 
 
@@ -1166,8 +1172,8 @@
     height: 50px;
     width: 50px;
     background-color: #5865f2;
-    border-radius: 100%;
-    filter: drop-shadow(3px 3px #221f26);
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px #221f267e);
 }
 
 
