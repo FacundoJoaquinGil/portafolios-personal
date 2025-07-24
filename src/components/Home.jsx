@@ -30,7 +30,7 @@ export const Home = () => {
   const handleDownload = async () => {
     try {
       Swal.fire({
-         title: t("home.preparando"), 
+        html: `<span style='font-size:1.2em;'>${t("home.preparando")}</span>`,
         toast: true,
         position: "top-end",
         icon: "info",
@@ -57,7 +57,7 @@ export const Home = () => {
       document.body.removeChild(link);
 
       Swal.fire({
-        title: t("home.descargando"),
+        html: `<span style='font-size:1.2em;'>${t("home.descargando")}</span>`,
         toast: true,
         position: "top-end",
         icon: "success",
@@ -69,7 +69,7 @@ export const Home = () => {
       console.error("Error descargando el CV:", error);
 
       Swal.fire({
-        title: t("home.descargando"),
+        html: `<span style='font-size:1.2em;'>${t("home.descargando")}</span>`,
         text: "Hubo un problema al descargar el archivo. Por favor, intenta de nuevo.",
         icon: "error",
         confirmButtonText: "Entendido",

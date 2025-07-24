@@ -22,8 +22,9 @@ export const Form = () => {
       return false;
     }
 
+    console.log(t("contactos-seccion.alerta.enviando"))
     Swal.fire({
-      title: t("contactos-seccion.alerta.enviando"),
+      html: `<span style='font-size:1.2em;'>${t("contactos-seccion.alerta.enviando")}</span>`,
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
@@ -46,6 +47,7 @@ export const Form = () => {
       })
       .then(
         () => {
+          
           Swal.fire({
             title: t("contactos-seccion.alerta.enviado"),
             text: t("contactos-seccion.alerta.enviado-desc"),
