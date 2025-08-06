@@ -98,11 +98,11 @@ export const Home = () => {
               href="https://www.linkedin.com/in/joaqu%C3%ADn-gil/"
               target="_blank"
             >
-              <img id="linkedin" src={linkedin}></img>
+              <img id="linkedin" alt="LinkedIn" title="LinkedIn" src={linkedin}></img>
             </a>
 
             <a href="https://github.com/FacundoJoaquinGil" target="_blank">
-              <img id="git" src={git}></img>
+              <img id="git" alt="Github" title="Github" src={git}></img>
             </a>
           </div>
 
