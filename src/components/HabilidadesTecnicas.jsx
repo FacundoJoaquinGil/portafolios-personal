@@ -17,6 +17,7 @@ import python from "../assets/python.png";
 import firebase from "../assets/firebase.png";
 import tsc from "../assets/tsc.png";
 import angular from "../assets/angular.png";
+import net from "../assets/net.png";
 import { useTranslation } from "react-i18next";
 import { VerTodasTecnologias } from "./VerTodasTecnologias";
 
@@ -41,6 +42,7 @@ export const HabilidadesTecnicas = () => {
     { src: tsc, alt: "tsc" },
     { src: git, alt: "git" },
     { src: angular, alt: "angular" },
+     { src: net, alt: ".NET" },
   ];
 
   return (

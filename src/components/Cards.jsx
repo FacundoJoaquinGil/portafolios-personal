@@ -14,6 +14,7 @@ import angular from "../assets/angular.png";
 import CSharp from "../assets/CSharp.png";
 import hosp from "../assets/hospital2.jpg";
 import oca from "../assets/oca.png";
+import net from "../assets/net.png";
 import tiendaAG from "../assets/tienda-angular.jpg";
 import { useTranslation } from "react-i18next";
 
@@ -124,6 +125,9 @@ export const Cards = () => {
               <div className="contenedor-lenguajes">
                 <div className="lenguajes-utilizados">
                   <img src={CSharp} alt="" />
+                </div>
+                <div className="lenguajes-utilizados">
+                  <img src={net} alt="" />
                 </div>
                 <div className="lenguajes-utilizados">
                   <img src={sql} alt="" />

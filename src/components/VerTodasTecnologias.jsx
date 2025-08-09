@@ -18,6 +18,8 @@ import python from "../assets/python.png";
 import firebase from "../assets/firebase.png";
 import tsc from "../assets/tsc.png";
 import angular from "../assets/angular.png";
+import net from "../assets/net.png";
+
 
 export const VerTodasTecnologias = () => {
   const { t } = useTranslation();
@@ -39,6 +41,7 @@ export const VerTodasTecnologias = () => {
     { src: tsc, alt: "TypeScript" },
     { src: git, alt: "Git" },
     { src: angular, alt: "Angular" },
+    { src: net, alt: ".NET" },
   ];
 
   const mostrarTodasTecnologias = () => {
