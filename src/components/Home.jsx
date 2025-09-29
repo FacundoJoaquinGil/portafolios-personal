@@ -1,4 +1,4 @@
-import perfil from "../assets/perfil.jpg";
+import perfil from "../assets/perfil3.png";
 import linkedin from "../assets/linkedin-logo.png";
 import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
