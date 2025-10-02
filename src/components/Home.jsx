@@ -1,4 +1,4 @@
-import perfil from "../assets/perfil3.png";
+import perfil from "../assets/perfil3.webp";
 import linkedin from "../assets/linkedin-logo.png";
 import git from "../assets/git-logo.png";
 import flecha from "../assets/flecha.png";
@@ -88,7 +88,7 @@ export const Home = () => {
           </div>
 
           <div className="contenedor-perfil">
-            <img id="perfil-img" src={perfil} />
+            <img id="perfil-img" src={perfil} loading="eager"/>
           </div>
         </div>
 
@@ -112,11 +112,11 @@ export const Home = () => {
               onClick={mostrarCurriculum}
             >
               <span id="curriculum">{t("home.cv")}</span>
-              <img id="flecha" src={flecha} />
+              <img  id="flecha" src={flecha}/>
             </button>
 
             <button className="contenedor-download" onClick={handleDownload}>
-              <img id="img-download" src={download} alt="Descargar CV" />
+              <img href="download-joaquin-gil.cv" id="img-download" src={download} alt="download cv" />
             </button>
           </div>
 
