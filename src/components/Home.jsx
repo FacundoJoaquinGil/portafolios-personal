@@ -78,7 +78,6 @@ export const Home = () => {
   };
 
   return (
-    <>
       <div className="contenedor-home">
         <div className="contenedor-encabezado">
           <div className="contenedor-titulos">
@@ -124,7 +123,6 @@ export const Home = () => {
             <ScrollIndicator />
           </div>
         </div>
-      </div>
-    </>
+      </div> 
   );
 };

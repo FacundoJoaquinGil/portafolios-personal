@@ -178,8 +178,7 @@
 /* Componente Home */
 .contenedor-home {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
@@ -202,7 +201,10 @@
 .contenedor-encabezado {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    justify-content: space-around !important;
+    flex: 1;
 }
 
 .contenedor-titulos {
@@ -388,13 +390,15 @@
     border-radius: 20px;
     margin-left: 30px;
     margin-bottom: 20px;
-    box-shadow: 5px 5px #0000003f;
 }
+
 
 
 .footer {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .contenedor-redes {
