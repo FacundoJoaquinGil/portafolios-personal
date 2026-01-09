@@ -1,12 +1,13 @@
 .scroll-indicator-portfolio {
   position: fixed;
   bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50px;   
+  left: auto;
+  transform: none;
   cursor: pointer;
   z-index: 1000;
-  transition: opacity 0.3s ease-in-out;
 }
+
 
 .scroll-indicator-portfolio--visible {
   opacity: 1;

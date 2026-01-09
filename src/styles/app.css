@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -30,7 +30,7 @@
     color: white;
     overflow: hidden;
     margin-right: 10px;
-    
+
 }
 
 .selected {
@@ -178,24 +178,23 @@
 /* Componente Home */
 .contenedor-home {
     display: flex;
-
     flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
 }
 
-.contenedor-home::before{
+.contenedor-home::before {
     content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: #020617;
-  background-image:
-    linear-gradient(to right, rgba(71, 85, 105, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(71, 85, 105, 0.05) 1px, transparent 1px),
-    radial-gradient(circle at 50% 10%, rgba(236, 72, 153, 0.12) 20%, rgba(168, 85, 247, 0.03) 40%, transparent 70%);
-  background-size: 40px 40px, 40px 40px, 100% 100%;
-  pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: #020617;
+    background-image:
+        linear-gradient(to right, rgba(71, 85, 105, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(71, 85, 105, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at 50% 10%, rgba(236, 72, 153, 0.12) 20%, rgba(168, 85, 247, 0.03) 40%, transparent 70%);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+    pointer-events: none;
 }
 
 .contenedor-encabezado {
@@ -941,7 +940,7 @@
 .contenedor-link:hover {
     text-shadow: 2px 2px #00000074;
     padding-right: 20px;
-   
+
 }
 
 
@@ -1143,7 +1142,7 @@
     border: 0;
 }
 
-.send-msg{
+.send-msg {
     filter: invert(1);
     width: 20px;
     height: 20px;
@@ -1255,59 +1254,63 @@
 }
 
 .youtube-video-btn {
-  margin-left: 10px;
-  padding: 9px;
-  background: #e73d37;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  border: 2px solid rgba(0, 0, 0, 0.247);
+    margin-left: 10px;
+    padding: 9px;
+    background: #e73d37;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.247);
 }
 
 .youtube-video-btn:hover {
-  animation: pulse 0.6s infinite;
+    animation: pulse 0.6s infinite;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Mejoras de responsividad para NavBar en móviles */
 @media (max-width: 600px) {
-  .contenedor-nav {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #links {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  #links a {
-    margin: 8px 0 !important;
-    font-size: 16px !important;
-    padding: 10px 0 !important;
-    width: 100vw;
-    text-align: center;
-    border-radius: 0;
-  }
-  .language-selector-wrapper {
-    position: static;
-    margin-top: 10px;
-    margin-right: 0;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-}
+    .contenedor-nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
+    #links {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #links a {
+        margin: 8px 0 !important;
+        font-size: 16px !important;
+        padding: 10px 0 !important;
+        width: 100vw;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .language-selector-wrapper {
+        position: static;
+        margin-top: 10px;
+        margin-right: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
