@@ -1,15 +1,12 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./App";
 import "./styles/index.css";
 import "./i18n";
-import Snowfall from "react-snowfall";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Snowfall snowflakeCount={100}/>
-    <App />
-  </React.StrictMode>
+ 
+  <App />
+  
 );
 
 // import ReactDOM from "react-dom/client";
