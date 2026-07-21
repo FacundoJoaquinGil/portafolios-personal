@@ -46,6 +46,11 @@
   },
   "proyectos-seccion": {
     "proyectos-titulo": "Featured Projects",
+    "kiosquito": {
+      "titulo": "Kiosquito Web",
+      "desc": "Kiosquito is a web application developed as a personal project for managing kiosks and small retail businesses. It allows users to manage inventory, record sales, view transaction history, and access the system from multiple devices. Additionally, it features a SaaS subscription model that unlocks advanced functionalities such as reports, sales analytics, and sales charts.",
+      "ver": "View Repository"
+    },
     "hospital": {
       "titulo": "Hospital Website",
       "desc": "I developed a web platform for Hospital San Pablo (Tucumán) that allows visitors to stay informed about medical news, view available staff, and check their consultation hours. The system includes an admin panel to manage users, medical staff, schedules, and internal documentation, all through a role-based access system",
@@ -69,11 +74,6 @@
     "tienda-ropa": {
       "titulo": "Clothing Store",
       "desc": "Clothing e-commerce site developed with React and Vite. Features a full CRUD for product management (add, edit, delete). The UI is modern and responsive across devices.",
-      "ver": "View Repository"
-    },
-    "biblioteca-escolar": {
-      "titulo": "School Library",
-      "desc": "Library management system with full CRUD functionality. Allows for book, user, and loan management with due dates. Ideal for tracking inventory and circulation.",
       "ver": "View Repository"
     }
   }

@@ -45,6 +45,11 @@
   },
   "proyectos-seccion": {
     "proyectos-titulo": "Proyectos Destacables",
+    "kiosquito": {
+      "titulo": "Kiosquito Web",
+      "desc": "Kiosquito es un proyecto personal desarrollado para la gestión de kioscos y pequeños comercios. Permite administrar el inventario, registrar ventas, consultar el historial de operaciones y acceder al sistema desde distintos dispositivos. Además, incorpora la opcion de una suscripción mensual, con funcionalidades avanzadas como reportes, estadísticas y gráficos de ventas",
+      "ver": "Ver Repositorio"
+    },
     "hospital": {
       "titulo": "Página Web Hospital",
       "desc": "Desarrollé una plataforma web para el Hospital San Pablo (Tucumán) que permite a los visitantes informarse sobre noticias médicas, conocer al personal disponible y consultar sus horarios de atención. El sistema cuenta con un panel de administración desde el cual se pueden gestionar usuarios, personal médico, horarios y documentación interna, todo a través de un sistema de roles",
@@ -69,11 +74,6 @@
       "titulo": "Tienda de Ropa",
       "desc": "E-commerce de ropa desarrollado con React y Vite. Incluye un sistema CRUD para que los administradores gestionen productos, permitiendo agregar, eliminar o editar artículos. La interfaz es moderna y está optimizada para dispositivos móviles y escritorio.",
       "ver": "Ver Repositorio"
-    },
-    "biblioteca-escolar": {
-      "titulo": "Biblioteca Escolar",
-      "desc": "Sistema de gestión de biblioteca escolar con CRUD completo. Permite agregar, editar o eliminar libros, gestionar usuarios y realizar préstamos con fechas límite. Ideal para el control de inventario y registros de préstamos.",
-      "ver": "Ver Repositorio"
-    }
+    } 
   }
 }
