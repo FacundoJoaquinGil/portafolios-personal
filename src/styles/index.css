@@ -8,10 +8,10 @@ body{
    background-size: 40px 40px; /* Tamaño de los cuadros */
 } 
 
-"#sobre-mi",
-"#proyectos",
-"#skills",
-"#contact"{
+#sobre-mi,
+#proyectos,
+#skills,
+#contact{
 scroll-margin-top: 63px;
 }
 
